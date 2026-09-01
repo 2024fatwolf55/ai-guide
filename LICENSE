@@ -1,3 +1,26 @@
+This license applies to the tutorial and documentation content of this
+repository: all Markdown files and their accompanying images.
+
+The source code in this repository — the files under the `.vuepress` directory
+(site theme, Vue components, TypeScript configuration and build scripts) and
+the root-level `package.json` — is NOT covered by this license. It is licensed
+separately under the MIT License. See the `LICENSE-CODE` file.
+
+Copyright of the documentation content belongs to 程序员鱼皮 (liyupi), who
+reserves all commercial rights. For commercial licensing, contact yupi996 on
+WeChat.
+
+本许可证适用于本仓库的教程与文档内容，即所有 Markdown 文件及其配图。
+
+本仓库中的源代码——`.vuepress` 目录下的站点主题、Vue 组件、TypeScript 配置和
+构建脚本，以及根目录的 `package.json`——不适用本许可证，而是单独采用 MIT 协议，
+详见 `LICENSE-CODE` 文件。
+
+教程内容的著作权归程序员鱼皮所有，作者保留全部商业使用权利。如需商业授权，
+请通过微信 yupi996 联系。
+
+=======================================================================
+
 Attribution-NonCommercial-ShareAlike 4.0 International
 
 =======================================================================
