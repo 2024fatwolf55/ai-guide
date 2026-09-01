@@ -471,25 +471,172 @@ Finally, searching became smooth, no longer stuttering, API requests were reduce
 
 ### Case 3: Slow Homepage
 
-Problem: The homepage of the website I created with AI loaded slowly, taking 5 seconds to display content.
+Problem: The homepage of the website I built with AI loaded very slowly, and I had to wait 5 seconds before I could see the content.
 
 My approach:
 
-1) Used Lighthouse to test and found that the JavaScript file was too large (2MB), and images were not optimized.
+1) I used Lighthouse to test it and found that the JavaScript file was too large (2MB), and the images were not optimized.
 
-2) Sent the Lighthouse report screenshot to AI:
+2) I sent a screenshot of the Lighthouse report to the AI:
 
 ```markdown
-Here is my performance test report [screenshot]. Please help me optimize it.
+这是我的性能测试报告【截图】，请帮我优化。
 ```
 
-3) AI provided a series of optimization suggestions, and I asked it to implement them one by one:
+3) The AI gave me a series of optimization suggestions, and I asked it to implement them one by one:
 
-- Please implement code splitting to delay loading unnecessary code.
-- Please compress images and convert them to WebP format.
-- Please configure CDN to accelerate static resources.
-- Please enable Gzip compression.
+- 请实现代码分割，把不必要的代码延迟加载
+- 请帮我压缩图片，使用 WebP 格式
+- 请配置 CDN 加速静态资源
+- 请启用 Gzip 压缩
 
-4) Tested the effects after each optimization to ensure improvements.
+4) After each optimization, I tested the result to make sure there was a real improvement.
 
-Finally, the homepage load time dropped from 5 seconds to 1
+In the end, the homepage load time dropped from 5 seconds to 1.2 seconds, the Lighthouse score improved from 45 to 90+, and users could very clearly feel that the site had become much faster.
+
+
+
+## 6. Principles of Performance Optimization in Vibe Coding
+
+When optimizing performance in Vibe Coding, you should follow some basic principles. These principles help you use AI more efficiently.
+
+
+
+### Measure First, Then Optimize
+
+Don't optimize based on gut feeling—measure with tools. Many times, the place you think is slow actually isn't, and the real bottleneck is somewhere else.
+
+In Vibe Coding, measurement is especially important. That's because AI may give you many optimization suggestions, but not all of them are worth implementing. Measure first, find the real bottleneck, and then let AI optimize it in a targeted way. That's the most efficient approach.
+
+
+
+### Optimize the Critical Path
+
+Not everything needs optimization. Prioritize the features users use most often, as well as the parts that have the greatest impact on performance—for example, homepage load time and the response speed of core features.
+
+
+
+### Balance Performance and Readability
+
+Performance optimization can sometimes make the code more complicated. You need to find a balance between performance and readability. If an optimization only improves performance by 10ms but makes the code much harder to understand, it may not be worth it.
+
+
+
+### Don't Optimize Too Early
+
+In the early stage of a project, don't spend too much time optimizing performance. First build the features, and once you have real users and real data, optimize based on actual conditions. Premature optimization can waste time because you don't yet know where the real bottlenecks are.
+
+This is especially important in Vibe Coding. Because AI can implement features quickly, you may feel tempted to optimize every detail to perfection. But remember: first get the app running, let users use it, and then optimize. MVP thinking applies to performance optimization as well.
+
+
+
+### Keep Monitoring
+
+Performance isn't something you optimize once and then forget about. As features increase, new performance problems will appear. I recommend using performance monitoring tools (such as Sentry and LogRocket) to continuously monitor your application's performance, so you can discover and solve problems in time.
+
+
+
+## 7. How to Let AI Help You Optimize Performance?
+
+If you haven't encountered many of the technical concepts above and don't really understand them, that's okay—you can still optimize performance entirely through Vibe Coding. The full process looks like this:
+
+
+
+### 1. Let the AI Analyze the Performance Problem
+
+Send both the code and the test results to the AI and let it analyze them for you:
+
+```markdown
+我的应用性能有问题，这是 Performance 测试结果【截图】，这是相关代码：
+
+【贴上你的代码】
+
+请帮我分析性能瓶颈，重点关注：
+1. 有没有不必要的重新渲染？
+2. 有没有重复的计算？
+3. 数据结构选择是否合理？
+4. 有没有可以并行的操作？
+```
+
+The AI will give you detailed analysis and suggestions.
+
+
+
+### 2. Let the AI Provide an Optimization Plan
+
+After finding the problem, ask the AI for a concrete optimization plan:
+
+```markdown
+这段代码在数据量大时很慢。请给我一个优化方案，要求：
+1. 使用虚拟滚动
+2. 保持代码可读性
+3. 不改变现有的 API
+4. 给出完整的实现代码
+```
+
+The AI will give you specific optimization code that you can use directly.
+
+
+
+### 3. Optimize Step by Step
+
+Don't apply all optimizations at once. Each time, optimize only one area, test the result, and continue only after confirming there is an improvement.
+
+For example:
+1. First optimize the slowest part (such as the database query)
+2. Test the result and confirm there is an improvement
+3. Then optimize the second slowest part (such as image loading)
+4. Keep testing and confirm the improvement
+
+This way, even if one optimization causes a problem, it's easy to roll back.
+
+
+
+### 4. Verify the Optimization Effect
+
+After every optimization, make sure to verify the effect. You can use the Performance tool to measure performance before and after the optimization to ensure the optimization really worked.
+
+If the optimization effect isn't obvious, you can feed the new test results back to the AI:
+
+```markdown
+我按你的方案优化了，但效果不明显，这是新的测试结果【截图】，还有其他优化方法吗？
+```
+
+The AI will give you better suggestions based on the new data.
+
+
+
+## Final Thoughts
+
+Performance optimization is an ongoing process, not a one-time task. As your project evolves, new performance problems will keep appearing, and you need to keep paying attention to them and optimizing them.
+
+In Vibe Coding, the core of performance optimization is: **discover the problem → describe the requirement → let the AI implement it → verify the result**. You don't need to become a performance expert; you only need to know how to guide AI to help you solve the problem.
+
+Let me summarize the key points of this article:
+
+1. Identify the problem first: Measure with tools and find the real bottleneck—don't rely on intuition. Show the test results to the AI and let it help you analyze them.
+2. Understand common problems: AI-generated code is prone to these performance issues—unnecessary rendering, loading large amounts of data all at once, unoptimized images, serial requests, and lack of caching. Once you know these patterns, you'll be better at guiding AI.
+3. Use AI well: Describe the performance problem clearly and let AI propose an optimization plan. Implement changes step by step, and verify the result after every change.
+4. Follow the principles: Measure before optimizing, prioritize the places with the biggest impact, don't optimize too early, and keep an MVP mindset.
+
+Remember, the goal of performance optimization is not to pursue extreme speed—it is to give users a good experience. If the user feels it's fast enough, that's enough.
+
+💡 If you want to learn performance optimization more systematically, you can check out Yupi's [Codefather projects](https://www.codefather.cn/post/1797431216467001345), which contain many hands-on performance optimization examples. For instance, the [Smart BI project](https://www.codefather.cn/course/1790980531403927553) explains async processing and message-queue optimization, the [AI Interview Practice Platform](https://www.codefather.cn/course/1826803928691945473) explains Redis multi-level caching and Elasticsearch search optimization, and the [Billion-Scale Like System](https://www.codefather.cn/course/1912696290659577857) focuses specifically on high-concurrency, high-performance, high-availability system architecture design.
+
+I hope these performance optimization techniques help you make your applications run faster and bring users a better experience.
+
+Let's go, let's go!
+
+
+
+## Recommended Resources
+
+1) Yupi's AI Navigation Site: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Codefather Learning Community: [Learning paths, programming tutorials, hands-on projects, job-hunting guides, discussions and Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Guide: [High-frequency topics for internships, campus recruiting, and social recruiting, plus real company problem analysis](https://www.mianshiya.com)
+
+4) Resume Builder for Programmers: [Professional templates, rich sample phrases, direct access to interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [A must-have for winning offers in internships, campus recruiting, and social recruiting](https://ai.mianshiya.com)

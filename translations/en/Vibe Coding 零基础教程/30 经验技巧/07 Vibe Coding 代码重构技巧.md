@@ -479,10 +479,78 @@ function TodoFilter({ filter, onChange }) {
 
 #### Step 3: Reassemble the Main Component
 
-Finally, combine the extracted Hook and split components. Now, the main component only coordinates these parts, telling them what to do without worrying about how.
+Finally, put the extracted Hook and the split components back together. Now the main component only needs to coordinate these parts and tell them what to do, without caring about how each part does it.
 
 ```typescript
-// App.tsx (50 lines)
+// App.tsx (50 行)
 function App() {
   const { todos, loading, addTodo, deleteTodo, updateTodo } = useTodos();
- 
+  const [filter, setFilter] = useState('all');
+
+  const filteredTodos = useFilteredTodos(todos, filter);
+
+  if (loading) return <LoadingSpinner />;
+
+  return (
+    <div>
+      <TodoInput onAdd={addTodo} />
+      <TodoFilter filter={filter} onChange={setFilter} />
+      <TodoList 
+        todos={filteredTodos} 
+        onDelete={deleteTodo}
+        onEdit={updateTodo}
+      />
+    </div>
+  );
+}
+```
+
+See the difference? The code suddenly goes from 500 lines down to 50 lines, and each part becomes very clear.
+
+
+
+### The Effect of Refactoring
+
+The refactored code has these advantages:
+
+- Each file is small and easy to understand
+- Responsibilities are clear, and each component does only one thing
+- It's easy to test, because each component and Hook can be tested independently
+- It's easy to extend; to add a new feature, you often only need to add a new component
+- It's easy to maintain; changing one place won't affect everything else
+- It's easier for AI to understand: when you need to modify a feature, AI only needs to read a small relevant file (for example, a 50-line `TodoInput.tsx`) instead of a 500-line `App.tsx`. This helps AI understand the context more accurately and generate better code.
+
+This is the transition from toy-project code to commercial-product code.
+
+
+
+## Final Thoughts
+
+Refactoring and technical debt management are parts of Vibe Coding that require human intervention. AI can help you write code quickly, but it can't always keep your code elegant forever—you need to do that deliberately.
+
+Let me summarize today's key points:
+
+- Understand technical debt: Know what technical debt is, how it happens, and what harm it causes.
+- Recognize common AI code problems: Excessive nesting, duplicated code, lack of abstraction, and arbitrary naming are all very common issues.
+- Use AI for refactoring: AI can both create technical debt and help you pay it back.
+- Refactor in small steps: Don't change too much at once. Each time, only change a small part and make sure the behavior stays the same.
+- Think modularly: Split code into independent, reusable modules and keep high cohesion with low coupling.
+- Refactor in time: Don't procrastinate. Fix problems as soon as you see them, and don't let technical debt pile up.
+
+Remember, elegant code is something you maintain with care and produce through continuous refactoring.
+
+I hope these refactoring techniques help you avoid turning your code into an unmaintainable mess, so your Vibe Coding projects can stay clean and elegant.
+
+
+
+## Recommended Resources
+
+1) Yupi's AI Navigation Site: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Codefather Learning Community: [Learning paths, programming tutorials, hands-on projects, job-hunting guides, discussions and Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Guide: [High-frequency topics for internships, campus recruiting, and social recruiting, plus real company problem analysis](https://www.mianshiya.com)
+
+4) Resume Builder for Programmers: [Professional templates, rich sample phrases, direct access to interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [A must-have for winning offers in internships, campus recruiting, and social recruiting](https://ai.mianshiya.com)

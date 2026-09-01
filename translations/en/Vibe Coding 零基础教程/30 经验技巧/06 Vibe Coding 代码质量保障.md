@@ -503,6 +503,232 @@ This is undoubtedly the most commonly used method by students, but it's not 100%
 
 ## 5. Quality Checklist
 
-You can create a quality checklist and have AI + humans review it before submitting code.
+You can build a quality checklist and have both AI and humans review it before every code submission.
 
-However, as
+That said, AI models are getting better and better at programming, and many AI tools now have built-in code inspection capabilities that automatically point out some common issues. So it's enough to understand this checklist—you don't need to memorize it by heart.
+
+
+
+### Functional Checks
+
+- [ ] All features work normally
+- [ ] Edge cases are handled
+- [ ] Errors have user-friendly messages
+- [ ] The user experience is smooth
+
+
+### Code Checks
+
+- [ ] The code follows project conventions
+- [ ] Variables and function names are clear
+- [ ] There is no duplicated code
+- [ ] Complex logic has comments
+- [ ] There is no commented-out dead code
+
+
+### Performance Checks
+
+- [ ] There are no unnecessary repeated calculations
+- [ ] List rendering uses `key`
+- [ ] Large data sets use pagination or virtual scrolling
+- [ ] Images are optimized
+
+
+### Security Checks
+
+- [ ] All user input is validated
+- [ ] Sensitive information is not exposed
+- [ ] API keys use environment variables
+- [ ] There is no SQL injection risk
+
+
+### Testing Checks
+
+- [ ] Core features have unit tests
+- [ ] Test coverage meets the target
+- [ ] All tests pass
+- [ ] Main workflows have been tested manually
+
+
+### Documentation Checks
+
+- [ ] The README is up to date
+- [ ] Important functions have comments
+- [ ] APIs are documented
+- [ ] Environment variables are explained
+
+
+
+## 6. Using Linters and Formatters
+
+Automation tools can help you discover many problems.
+
+💡 This part is a bit more professional and is mainly suitable for readers with some programming background. If you're a complete beginner, you can skip it for now and come back when you need it.
+
+
+
+### ESLint Code Inspection
+
+ESLint is a JavaScript / TypeScript code inspection tool that can automatically discover problems in your code, such as unused variables, potential bugs, or code that doesn't follow conventions. It's like an automated code reviewer that helps you catch issues before you run the code.
+
+Installation and setup (for the latest setup method, refer to the [official documentation](https://eslint.org/docs/latest/use/getting-started)):
+
+```bash
+npm install -D eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin
+```
+
+Create a `.eslintrc.json` configuration file and define the rules:
+
+```json
+{
+  "parser": "@typescript-eslint/parser",
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended"
+  ],
+  "rules": {
+    "no-console": "warn",
+    "no-unused-vars": "error",
+    "@typescript-eslint/no-explicit-any": "error"
+  }
+}
+```
+
+Run the check:
+
+```bash
+npm run lint
+```
+
+ESLint will tell you about problems in your code, such as unused variables and potential bugs.
+
+
+
+### Prettier Code Formatting
+
+Prettier is a code formatting tool that can automatically adjust code style—for example indentation, line breaks, and quote styles—so your code looks cleaner and more consistent. It's like Word's format painter: one click, and all your code follows the same style.
+
+Installation (for the latest usage, refer to the [official documentation](https://prettier.io/)):
+
+```bash
+npm install -D prettier
+```
+
+Create a `.prettierrc` configuration file and define formatting rules, such as whether to use semicolons, whether to use single quotes or double quotes, and how many spaces to use for indentation:
+
+```json
+{
+  "semi": true,
+  "singleQuote": true,
+  "tabWidth": 2,
+  "trailingComma": "es5"
+}
+```
+
+Run formatting:
+
+```bash
+npx prettier --write "src/**/*.{ts,tsx}"
+```
+
+Prettier will automatically reformat the code and make it cleaner.
+
+
+
+### Integrate Them into the Editor
+
+Install ESLint and Prettier plugins in VS Code / Cursor / WebStorm and other programming tools, so files are automatically checked and formatted when you save them.
+
+Using VS Code as an example, configure `settings.json` like this:
+
+```json
+{
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  }
+}
+```
+
+This way, every time you save a file, the code is automatically formatted and common issues are fixed.
+
+
+
+### Integrate Them into Git
+
+By using Husky and lint-staged, you can automatically run checks before code is committed.
+
+Husky is a Git hook tool that can automatically run scripts during Git operations such as commit and push. `lint-staged` is specifically used to check only the files about to be committed, instead of checking the entire project.
+
+Run these commands to install the tools:
+
+```bash
+npm install -D husky lint-staged
+npx husky init
+```
+
+Then configure `package.json`:
+
+```json
+{
+  "lint-staged": {
+    "*.{ts,tsx}": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  }
+}
+```
+
+That way, every time you run `git commit`, the code will be automatically checked and formatted.
+
+
+
+## 7. Continuously Improving Code Quality
+
+Code quality isn't a one-time task—it's a process of continuous improvement. You need to regularly spend time refactoring, simplifying complex functions, extracting repeated code, improving naming, and adding comments. I recommend spending half an hour each week, or after each completed feature, to refactor a little and keep the code tidy.
+
+If you're developing as a team, regular code review meetings can be very helpful. Each week, you can choose a few code snippets to review together, discuss what was done well and what can be improved, share best practices, and unify coding style. This not only improves code quality, but also promotes learning and communication among team members.
+
+In addition, for programmers, it's important to read excellent open-source projects. The source code of React, the source code of Next.js, and well-known component libraries are all great learning material. Look at how others write code and learn their techniques and ways of thinking. Whenever you find a bug or run into a problem, write it down: what the problem was, why it happened, how it was fixed, and how to avoid it next time. These experiences help you avoid making the same mistakes repeatedly and keep improving your code quality.
+
+
+
+## Final Thoughts
+
+Code quality is the part of Vibe Coding that is easiest to overlook, but also one of the most important. AI can help you write code quickly, but it can't guarantee code quality. As a developer, you need to build a complete quality assurance system—or at least know what good, high-quality code looks like.
+
+Let me summarize the key points of this article:
+
+1. Define quality standards clearly: Know what good code is and establish quality standards for your project.
+
+2. Review code seriously: Don't blindly trust AI. Carefully review every line of code.
+
+3. Write tests: Testing is the key to ensuring quality, so don't be lazy about it.
+
+4. Master debugging techniques: Learn to debug efficiently with breakpoints, browser tools, and more.
+
+5. Use automation tools: Tools like ESLint and Prettier can automatically discover many problems.
+
+6. Keep improving: Refactor regularly, study great code, and record lessons learned.
+
+Fast development matters, but code quality matters even more. It's better to go a bit slower and make sure the quality is there.
+
+I hope these methods help you build a complete code quality assurance system and make your Vibe Coding projects more stable and reliable.
+
+Let's go, friends! 👍🏻
+
+
+
+## Recommended Resources
+
+1) Yupi's AI Navigation Site: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Codefather Learning Community: [Learning paths, programming tutorials, hands-on projects, job-hunting guides, discussions and Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Guide: [High-frequency topics for internships, campus recruiting, and social recruiting, plus real company problem analysis](https://www.mianshiya.com)
+
+4) Resume Builder for Programmers: [Professional templates, rich sample phrases, direct access to interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [A must-have for winning offers in internships, campus recruiting, and social recruiting](https://ai.mianshiya.com)

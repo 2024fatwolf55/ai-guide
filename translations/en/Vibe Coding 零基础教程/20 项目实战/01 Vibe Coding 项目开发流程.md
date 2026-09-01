@@ -498,4 +498,190 @@ If Xiao Aba had followed the 5-step process from the start, clearly writing the 
 
 ## Practical Tips for More Accurate AI-Generated Code
 
-After mastering the complete development process
+After mastering the complete development process, let me share a few practical tips to help AI generate code that is more accurate and closer to your expectations. These are techniques I've summarized from real-world practice, and they're extremely useful.
+
+You can find more experience and tips in the **Tips & Tricks** section of this Vibe Coding tutorial. Here, I'll just list a few that I think are especially important.
+
+
+
+### 1. Optimize Your Prompt
+
+The quality of the prompt directly determines how accurate the AI-generated code will be. A good prompt should include three elements: clearly define the AI's role, provide specific detailed requirements, and break down complex tasks.
+
+For example, you can first tell the AI what role it should play: "You are an experienced front-end engineer skilled in building modern web applications with React and TypeScript."
+
+This way, the AI knows what perspective it should work from, and then you can provide the detailed requirements.
+
+❌ Poor Prompt:
+```
+帮我做一个按钮
+```
+
+✅ Good Prompt:
+```
+创建一个主要操作按钮组件：
+- 使用 Tailwind CSS
+- 支持 primary、secondary、danger 三种样式
+- 支持 loading 状态（显示加载动画）
+- 支持 disabled 状态
+- 点击时有反馈动画
+```
+
+
+
+You also need to learn how to break down complex tasks. Don't ask the AI to finish a complicated task all at once. Instead, split it into several small tasks:
+
+❌ Poor Prompt:
+```
+实现用户管理功能
+```
+
+✅ Good Prompt:
+```
+第一步：创建用户数据模型和类型定义
+第二步：实现用户注册接口
+第三步：实现用户登录接口
+第四步：实现用户信息查询接口
+
+现在请先完成第一步。
+```
+
+If you have reference code or designs, you can also provide them to the AI:
+
+```markdown
+参考这个登录页面的设计风格：[截图或链接]，创建一个注册页面，保持风格一致。
+```
+
+
+
+### 2. Be Aware of Operating System Differences
+
+AI is generally more familiar with Linux or macOS terminal commands. If you're using Windows, you have two options: install WSL (Windows Subsystem for Linux) and develop in a Linux environment, or clearly tell the AI that you're using Windows.
+
+State it clearly in `AGENTS.md`:
+
+```markdown
+## 开发环境
+- 操作系统：Windows
+- 终端：PowerShell
+- 请使用 Windows 兼容的命令
+```
+
+Or state it clearly in the conversation:
+
+```
+我使用的是 Windows 系统，请提供 Windows 兼容的命令。
+```
+
+
+
+### 3. Handle Cases Where AI Gets Stuck in a Loop
+
+Sometimes AI gets stuck in a loop, repeating the same thing over and over, or failing to solve a problem for a long time. In those cases, you can try a few methods.
+
+1) Clear the context. In Cursor, clear the current conversation and start again, but make sure to save any important information first.
+
+
+
+2) Reframe the question instead of repeating the same one.
+
+For example, the original question might be very simple:
+```
+为什么登录功能不工作？
+```
+
+Try a different angle:
+```
+请检查登录流程的每一步：
+1. 前端是否正确发送了请求？
+2. 后端是否收到了请求？
+3. 数据库查询是否正确？
+4. 返回的数据格式是否正确？
+
+请逐步排查并告诉我哪一步出了问题。
+```
+
+
+
+3) Provide more context. The AI may be missing key information, so you can give it the relevant files, error messages, logs, and so on:
+
+```
+我遇到了登录问题，相关信息如下：
+
+1. 前端代码：[粘贴代码]
+2. 后端代码：[粘贴代码]
+3. 错误信息：[粘贴错误]
+4. 网络请求：[粘贴请求和响应]
+
+请帮我分析问题出在哪里。
+```
+
+If you still can't solve it, you can ask other AIs for help. Copy the code and the problem to Claude or ChatGPT and let them analyze it. They may offer a different solution.
+
+
+
+### 4. Let AI Help You Optimize Prompts
+
+If you're not sure whether your prompt is good enough, you can ask AI to optimize it for you. This is a very practical trick:
+
+```
+我想让 AI 帮我实现用户登录功能。
+我现在的 Prompt 是："实现登录功能"
+请帮我优化这个 Prompt，让它更详细、更准确，
+让 AI 能生成高质量的代码。
+```
+
+The AI will give you an optimized prompt with more details and clearer requirements.
+
+
+
+### 5. Make Use of AI's Code Review Ability
+
+After finishing a feature, you can ask AI to review the code for you:
+
+```
+请审查我的登录功能代码，检查：
+1. 是否有安全问题（如密码明文传输）
+2. 是否有性能问题
+3. 代码是否符合最佳实践
+4. 是否有潜在的 Bug
+5. 用户体验是否可以改进
+
+请给出具体的改进建议。
+```
+
+AI reviews can often uncover issues you didn't notice. For core functionality, you can even ask multiple different AI models to review it at the same time for cross-validation.
+
+
+
+## Final Thoughts
+
+At this point, you might be thinking: this process seems a bit complicated. Is it really necessary?
+
+My answer is: absolutely necessary!
+
+I've personally used Vibe Coding to build more than 30 projects, ranging from simple tools to complex full-stack applications. In my experience, the projects that were well planned from the beginning all went very smoothly during development and were eventually launched successfully. On the other hand, most projects that were built in a "just do whatever comes to mind" way were abandoned halfway through. Planning is Everything—this is the first core principle of Vibe Coding.
+
+Although writing documentation takes time upfront, development becomes much smoother later on, and the quality of the AI-generated code is much higher.
+
+And good planning doesn't limit your creativity—it actually gives you more freedom. Because you know what you're building and where each step is heading.
+
+Of course, this process isn't rigid. As you gain more experience, you'll find your own rhythm. But in the beginning, I strongly recommend following this process so you can build good habits.
+
+Finally, let me emphasize these key points once again: planning is more important than code, documentation is the AI's compass, small-step iteration keeps things under control, modularization is the key to large projects, and version control is your regret medicine.
+
+Now you've mastered the complete project development workflow. In the next article, I'll take you through 5 practical personal tool projects using this process so you can experience how powerful it really is.
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Paths, Programming Tutorials, Hands-on Projects, Job-Hunting Guide, Community Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Real Company Interview Analysis](https://www.mianshiya.com)
+
+4) Resume Tool for Programmers: [Professional Templates, Rich Example Sentences, Direct Access to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [Essential for Landing Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

@@ -377,4 +377,109 @@ This project aims to implement weather query functionality. Users input a city n
 
 ![](https://pic.yupi.icu/1/demoweb5.png)
 
-For technology selection
+For the tech stack, use React + TypeScript + Vite for the front end, Tailwind CSS for styling, fetch weather data through the [OpenWeatherMap API](https://openweathermap.org/api) (free), and store favorite cities in LocalStorage.
+
+![](https://pic.yupi.icu/1/image-20260112141920735.png)
+
+
+
+### Development Steps
+
+1) Register for the API
+
+The first step in development is registering for the API. Go to the OpenWeatherMap website, create an account, and get a free API Key. The registration process is simple—just fill in some basic information. The free plan has some request limits, but it's more than enough for learning and personal use.
+
+2) Wrap the API Requests
+
+Then wrap the API requests. Create an API utility file and put all API calls there. Tell the AI:
+
+```
+创建 API 工具文件，封装天气 API 调用：
+- 定义 API 基础 URL 和 API Key（从环境变量读取）
+- 创建 getCurrentWeather 函数，获取当前天气
+- 创建 getForecast 函数，获取未来天气预报
+- 支持按城市名称或经纬度查询
+- 要有错误处理
+```
+
+This prompt clearly explains what functionality needs to be wrapped, and the AI will generate a complete API utility file.
+
+3) Implement the Search Feature
+
+Next, implement the search feature. Tell the AI:
+
+```
+实现天气查询功能：
+- 用户输入城市名称，点击搜索
+- 调用 API 获取天气数据
+- 显示温度、天气状况、湿度、风速等信息
+- 查询过程显示加载动画
+- 查询失败显示友好提示（比如"找不到该城市"）
+```
+
+This prompt includes both functional requirements and user experience requirements. The AI will implement a complete search feature, including loading states and error handling.
+
+4) Implement Geolocation
+
+You can also implement location detection. Tell the AI:
+
+```
+实现自动定位功能：
+- 使用浏览器的 Geolocation API 获取用户位置
+- 根据经纬度查询天气
+- 如果用户拒绝定位权限，显示提示
+```
+
+This way, users don't have to type the city name manually, which is more convenient.
+
+5) Add Favorites
+
+Finally, add a favorites feature. Tell the AI:
+
+```
+实现城市收藏功能：
+- 查询过的城市可以收藏
+- 收藏列表保存在 LocalStorage
+- 点击收藏的城市可以快速查询
+- 支持删除收藏
+```
+
+This allows users to quickly check the weather for frequently used cities.
+
+
+
+### Key Technical Points
+
+The key to this project is handling API calls properly. API requests can fail, so you need solid error handling. For example, if the city can't be found, the API Key is invalid, or there's a network error, the app should show user-friendly messages. During the request process, show a loading animation so users know the query is in progress.
+
+You also need to pay attention to API Key security. Don't hardcode it directly in the code. Use environment variables instead. Create a `.env.local` file, put the API Key inside it, and read it through environment variables in the code. Also remember to add `.env.local` to `.gitignore` so it doesn't get committed to Git and exposed by accident.
+
+
+
+### Extension Ideas
+
+After finishing the basic version, you can continue expanding the functionality. For example, add weather icons and animations to make the interface more lively; display the air quality index to help users pay attention to health; support multi-city comparison so users can check several cities at once; add weather alerts to warn users about severe weather in time; or even support historical weather queries to analyze weather trends.
+
+
+
+## Final Thoughts
+
+Through these 5 projects, you've already learned the core skills of Web development: component development, state management, data persistence, API calls, user interaction, and more. From a simple portfolio website to a complex to-do app, from a text editor to a timer, and then to external API integration, each project helps you master new skills.
+
+If you run into difficulties during development, or if you want to learn more development techniques and best practices, you can refer to the **Tips & Tricks** section of this tutorial, where there are more detailed explanations.
+
+After mastering personal tool development, in the next article I'll take you to build even cooler AI applications. Let's explore the infinite possibilities of AI together.
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Paths, Programming Tutorials, Hands-on Projects, Job-Hunting Guide, Community Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Real Company Interview Analysis](https://www.mianshiya.com)
+
+4) Resume Tool for Programmers: [Professional Templates, Rich Example Sentences, Direct Access to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [Essential for Landing Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

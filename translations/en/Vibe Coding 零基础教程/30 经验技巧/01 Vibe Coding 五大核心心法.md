@@ -340,11 +340,15 @@ Let me recap:
 4. Context is King: Provide AI sufficient background information.
 5. Think Like a Product Manager: Focus on UX and make strategic trade-offs.
 
-While simple in concept, mastering these requires practice. Consciously apply them in your next project and observe the results.
+While simple in concept, truly mastering these principles requires continuous practice. I recommend consciously applying them in your next project and seeing what kind of results you get.
 
-Remember, Vibe Coding isn't just about having AI write code—it's about guiding AI and managing the entire development process. Mastering these principles transforms you from someone who "uses AI" to someone who "uses AI effectively."
+At their core, all of these principles emphasize the same thing: **you** are the leader of the engineering work, and AI is just a tool in your hands. In the industry, this idea is called Harness Engineering. If you want to understand its full definition and core modules, you can read *The Complete Vibe Coding Concepts* in this tutorial series for a deeper dive.
 
-In my next article, I'll explain techniques for efficient AI communication—"prompt engineering" skills.
+![](https://pic.yupi.icu/1/2_harness_horse.png)
+
+Remember, Vibe Coding isn't just about letting AI write code. What's even more important is how you guide AI and how you manage the entire development process. Once you master these principles, you'll evolve from someone who merely "uses AI" into someone who truly "uses AI well."
+
+In the next article, I'll explain how to have efficient conversations with AI—in other words, the techniques of "conversation engineering."
 
 You've got this! 💪
 

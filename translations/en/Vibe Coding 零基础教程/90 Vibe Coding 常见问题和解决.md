@@ -246,4 +246,237 @@ Answer: First, don’t stick to one AI—try switching models, as different mode
 
 If you have programming experience, check the official documentation—it’s the most authoritative source.
 
-Alternatively, search for
+Alternatively, search for solutions to similar problems, such as GitHub Issues, because many problems have already been encountered by others, and you can often just reuse their fixes.
+
+You can also ask for help in communities or forums, such as posting in [Programming Navigation](https://codefather.cn/), or consult experienced developers. Sometimes one sentence from someone else is enough to wake you up.
+
+Remember, AI is a tool, not magic. Human judgment matters too.
+
+
+
+### How to Manage Project Versions and Code?
+
+Answer: Use Git for version control and host your code on GitHub.
+
+- Commit after finishing each feature, and write clear commit messages
+- If you want to try a new feature, create a new branch and merge it only after testing
+- Back up your code regularly to avoid data loss
+- If you’re collaborating as a team, define a branch strategy and coding standards
+
+Git is a must-have skill for programmers and absolutely worth learning. But you don’t need to memorize every Git command, because AI can help you handle that.
+
+
+
+### How to Handle Project Dependencies and Package Management?
+
+Answer: Use npm or pnpm to manage dependencies, and update package versions regularly.
+
+Also pay attention to the following points:
+
+1. Check package security carefully and avoid using packages with vulnerabilities.
+2. If you run into dependency conflicts, ask AI to help you solve them.
+3. Don’t install too many unnecessary packages; every package increases project size and complexity.
+4. Regularly clean up unused dependencies to keep the project tidy.
+
+If you’re not sure which package to use, ask AI to recommend a few options and compare them for you.
+
+
+
+### How to Test AI-Generated Code?
+
+Answer: If it’s an important project, you can ask AI to help you write automated tests, such as unit tests and integration tests.
+
+But don’t trust AI completely — you must test manually! Click through every feature and try all kinds of edge cases.
+
+Testing not only helps you find bugs, it also helps you understand how the code behaves. Don’t think testing is a waste of time — it saves even more debugging time later. You can also ask friends or invite users to help test, because they often find problems you would never think of.
+
+
+
+### How to Optimize AI-Generated UI Interfaces?
+
+Answer: You can ask AI to reference excellent design styles, for example by describing something like "Use Notion as the UI style reference, keep it clean and modern," or by pasting screenshots of great websites so the AI can understand and imitate them.
+
+If you have some programming background, or already have favorite UI component libraries, you can directly recommend them to the AI. For example: Ant Design, Material-UI, or shadcn/ui. They all provide ready-made beautiful components.
+
+Remember, good UI is not about being flashy. It’s about being clear, consistent, and easy to use.
+
+
+
+### How to Handle Multi-Person Collaboration?
+
+Answer: Use Git branches for collaboration. Each person develops on their own branch, then merges into the main branch after finishing.
+
+In addition, there are a few important points:
+
+1. Define coding standards to keep the code style consistent. You can ask AI to help generate team collaboration docs, including development standards and Git workflows.
+2. Use Pull Requests for code reviews and mutual learning.
+3. Sync code regularly to avoid conflicts.
+4. Use project management tools such as Notion to assign tasks.
+5. Keep communicating, and discuss problems in time.
+
+
+
+### How to Add a Database to a Project?
+
+Answer: The easiest way is to use a BaaS service such as Supabase or Firebase. They provide databases, authentication, storage, and more, so you don’t need to build your own server.
+
+Just tell the AI, "Please integrate a Supabase database," and it will generate the code for you.
+
+For small projects, BaaS services are totally sufficient and save a lot of hassle.
+
+If you need more control, you can use databases like PostgreSQL or MongoDB, but then you need to deploy and manage them yourself.
+
+
+
+### How to Handle User Authentication and Authorization?
+
+Answer: Don’t build an authentication system from scratch by yourself — it’s too easy to create security issues. Use mature solutions instead, such as Supabase Auth, Firebase Auth, Auth0, or NextAuth.js. These provide complete authentication flows, including email verification, password reset, and third-party login.
+
+Just tell the AI, "Please implement user login and registration with NextAuth.js," and it can help you integrate it.
+
+If it’s a learning project, a simple implementation is okay. But for commercial projects, you should definitely use a mature solution.
+
+
+
+## Vibe Coding Learning and Growth
+
+### Can Complete Beginners Learn Vibe Coding?
+
+Answer: Absolutely. Vibe Coding lowers the barrier to programming, so even complete beginners can get started. I recommend starting with a no-code platform like Bolt.new, building a few small projects first to gain confidence. Then learn while building and gradually understand basic programming concepts like variables, functions, conditionals, and loops. You don’t need to go too deep at the beginning — being able to understand AI-generated code is enough. Slowly, you’ll find yourself understanding more and more, and eventually even modifying code by yourself.
+
+
+
+### How Long Does It Take to Learn Vibe Coding?
+
+Answer: Getting started is fast — you can build your first project in less than 10 minutes. But becoming truly proficient requires day-by-day practice. I recommend spending 1–2 hours a day practicing: start with small projects to build experience, then gradually try commercial-grade products.
+
+Remember, learning is a continuous process. Don’t rush for quick success. What matters is not how fast you learn, but whether you can stick with it. Improve a little every day, and after a few months, you’ll be surprised by how much you’ve grown.
+
+
+
+### What Learning Resources Do You Recommend?
+
+Answer:
+
+1. Official documentation is the best resource, such as Cursor’s docs or Claude’s docs.
+2. [Yupi AI Navigation](https://ai.codefather.cn/) includes a large collection of AI tools and learning resources.
+3. There are many Vibe Coding video tutorials on Bilibili and YouTube. I also frequently share this kind of content on my "Programmer Yupi" account.
+4. GitHub has resource collections such as awesome-vibe-coding.
+5. You can also join developer communities such as [Programming Navigation](https://www.codefather.cn/) to learn and communicate with others.
+
+
+
+### How to Improve Your Vibe Coding Skills?
+
+Answer: The most important thing is more practice.
+
+- Build different types of projects, from simple to complex
+- Study excellent prompts and conversation techniques, and see how others use AI
+- Understand the code AI generates instead of just copy-pasting it
+- Summarize lessons learned and record the problems you encounter and how you solved them
+- Keep learning and stay updated with new tools and technologies
+- Try refactoring old projects using the new techniques you’ve learned
+- Teaching others is also a great way to learn, because output drives deeper understanding
+
+
+
+### How to Balance AI Assistance and Independent Learning?
+
+Answer: Don’t rely on AI completely, but don’t reject it completely either. You can let AI generate code first, then understand it and modify it yourself. When you hit something you don’t understand, think about it on your own first, then ask AI.
+
+If you’re still at the beginner stage, regularly do some exercises without AI to strengthen your fundamentals.
+
+**Remember: AI is a tool and an accelerator, but it cannot replace your own thinking.**
+
+Just like a calculator can’t replace mathematical thinking, AI can’t replace programming thinking. Use AI to improve efficiency, and use thinking to improve ability.
+
+
+
+### How to Stay Motivated While Learning?
+
+Answer: Work on projects you’re genuinely interested in, instead of learning just for the sake of learning.
+
+You can:
+
+- Set small goals and reward yourself every time you complete one
+- Learn together with friends and encourage each other
+- Share your work to get feedback and recognition
+- Record your learning process so you can see your own progress
+
+Learning is a marathon, not a sprint. Take it slowly and enjoy the process. Most importantly, remember why you started learning, what you want to build, and what kind of person you want to become. Don’t compare yourself with others — compare yourself with your past self.
+
+
+
+## Vibe Coding Cost and Efficiency
+
+### How to Control AI Usage Costs?
+
+Answer: There are many ways to save real money:
+
+- Use cheaper models for simple tasks, and expensive models only for complex tasks
+- Make full use of free resources, such as the free quotas from DeepSeek and Tongyi Qianwen
+- Optimize your prompts so you explain things clearly in one go and reduce back-and-forth conversations
+- Avoid asking AI to generate large amounts of unnecessary code
+- Use caching features to reduce repeated computation
+
+If you’re in the learning stage, free resources are completely enough. If you’re building a commercial project, the cost is worth it, because AI greatly improves efficiency and the labor cost saved far exceeds the AI cost.
+
+
+
+### How to Improve Development Efficiency?
+
+Answer: There are many techniques to improve efficiency:
+
+- Use keyboard shortcuts to reduce mouse operations
+- Use Agent mode so AI can automate work and reduce the time you need to invest manually
+- Prepare prompt templates so common requirements can be reused directly
+- Use code snippets to quickly insert common code
+- Set up your development environment properly to reduce repetitive work
+- Learn some basic knowledge so you can understand and modify AI-generated code faster
+
+Most importantly, plan well and think things through before you start, so you avoid rework. When building complete Vibe Coding projects, real efficiency is not just speed — it’s avoiding detours.
+
+
+
+### How to Avoid Repetitive Work?
+
+Answer: A programmer’s greatest virtue is "laziness." The key to avoiding repetitive work is **accumulation and reuse**.
+
+Some practical methods:
+
+- Save commonly used prompts, configs, and code snippets so you can copy them directly or let AI reuse them later
+- Use template projects so new projects start from templates instead of being generated from scratch
+- Record problems you’ve already solved and look them up directly next time
+- Build your own knowledge base and accumulate experience
+
+
+
+### How to Choose the Right Subscription Plan?
+
+Answer: If you’re still learning, start with the free version and upgrade only if it’s not enough. If you use AI for daily work or want to build a commercial project, Cursor Pro usually offers the best value for money. If you need heavy usage, consider API pay-as-you-go. If your budget is limited, subscriptions for domestic Chinese models are often cheaper.
+
+In short, don’t subscribe to the most expensive plan right away. Try things first and find the one that suits you best. And don’t reject paid tools outright — if a tool saves you time, the cost is worth it.
+
+
+
+## Final Words
+
+This article summarizes dozens of common questions, covering concept understanding, tool selection, usage tips, project development, learning and growth, cost, efficiency, and more. These are all questions I’ve personally encountered in practice, or that students often ask in the [AI Programming Community](https://ai.codefather.cn/).
+
+Of course, Vibe Coding is still evolving rapidly. New problems will keep appearing, and new solutions will keep emerging. I recommend that you keep learning, follow community updates, communicate with other developers, and keep improving without limits!
+
+If you want a more systematic way to troubleshoot bugs, Yupi’s [“AI Programming Practice for Beginners” video course](https://www.bilibili.com/cheese/play/ss475098271) comes with an **AI Programming Bug Quick Reference Manual**, covering quick fixes for all kinds of common errors. And after purchasing the course, you can join the exclusive student group, where you can ask me directly when you run into problems you can’t solve on your own instead of struggling alone.
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Path, Programming Tutorials, Practical Projects, Job Hunting Guide, Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Eight-Part Essay: [Internship/Campus Recruitment/Social Recruitment High-Frequency Test Points, Enterprise Real Questions Analysis](https://www.mianshiya.com)
+
+4) Programmer Resume Writing Tool: [Professional Templates, Rich Examples, Direct to Interview](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interview: [Internship/Campus Recruitment/Social Recruitment Interview Essential for Getting Offers](https://ai.mianshiya.com)

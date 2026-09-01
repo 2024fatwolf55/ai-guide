@@ -346,4 +346,64 @@ Finally, let's ask it to explain a PDF. Input prompt:
 Help me summarize the content of the PDF and generate a new PDF
 ```
 
-The result was unexpected. The AI prompted
+The result was unexpected. The AI said the input exceeded the token limit?
+
+![](https://pic.yupi.icu/1/1750931736351-d36ac39e-23ce-42c1-af30-d1f56284d48a.png)
+
+Wasn’t it supposed to support a 1 million token context window? How could reading a tiny PDF exceed the limit? I wouldn’t even be surprised if it couldn’t generate a PDF, but this PDF only had a few words and a couple of images—why would that happen?
+
+![](https://pic.yupi.icu/1/1750931817587-41d3c5ef-aca8-4ba6-b89a-a1d55c739c61.png)
+
+I originally wanted to test audio and video generation too, but forget it. At this point, I already have my own judgment about this tool.
+
+## 3. Pros and Cons of Gemini CLI
+
+After testing it across 8 dimensions, my overall feeling is: **it’s hard to sum up in one sentence**. Maybe my expectations for Google were just too high.
+
+### Pros
+
+Let’s start with the advantages. **It really is more convenient to operate local files through the terminal**, and you can install it with just one command and use it directly in your existing terminal, without downloading another terminal application. That part is pretty good.
+
+And Gemini CLI’s biggest advantage is that it’s **completely free** (with a free quota), supports the Gemini 2.5 Pro model, offers a 1 million token context window, and allows 1,000 requests per day. For developers with limited budgets, that’s a very attractive choice.
+
+In addition, Gemini CLI is **fully open source** (Apache 2.0 license) and supports MCP server integration, so it can be extended with many capabilities.
+
+### Cons
+
+But the problems are also quite obvious.
+
+First, **the AI agent performance is average**. Its natural language understanding isn’t good enough—it may do too much, go off track, or simply get things wrong. It’s also rather slow; even simple questions can take a long time.
+
+Second, **the interaction experience isn’t very good**. The terminal experience really can’t compare with a web page or native client. It’s hard to see the model’s thinking process, and the interface presentation and interaction effects are just so-so. The file picker also lags frequently, making file selection inconvenient.
+
+Another issue is that **the usage barrier is relatively high**. It’s still pretty difficult for non-programmers to use, since it requires familiarity with terminal operations. Some features also require extra configuration, such as setting up a Google Cloud Project.
+
+### Who Is It Suitable For?
+
+I think using AI to generate terminal commands is great (for example, Warp AI). But if you insist on using AI inside this text box to generate content, I honestly think there’s no real need.
+
+Gemini CLI may still be somewhat useful for technical experts who are good at working on Linux servers, but if you use it on a company server, you still need to pay attention to security.
+
+## Final Words
+
+If you’ve read this far, I believe you now have a comprehensive understanding of Gemini CLI.
+
+I think Gemini CLI is fairly average—it’s nowhere near as amazing as the overwhelming hype online suggests. At this stage, it’s more suitable for trying out and learning, rather than using as a daily productivity tool.
+
+That said, although the experience is only average right now, considering Google’s technical strength and the fact that it’s open-source and free, I believe this tool will continue to improve as new versions iterate. **And for us, having one more tool to choose from is never a bad thing.**
+
+If your budget is limited and you want to try an AI command-line tool, Gemini CLI is a decent option. But if you want the best experience, I still recommend Claude Code.
+
+What do you all think of this tool? Feel free to leave a comment. If you’re interested, you can also try it yourself and see whether your experience matches mine—or whether you’ve found some better usage patterns and tips. If you’re learning programming and AI, don’t forget to follow Yupi~
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Roadmaps, Programming Tutorials, Hands-on Projects, Job-Hunting Guides, and Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Plus Real Company Question Analysis](https://www.mianshiya.com)
+
+4) Resume-Building Tool for Programmers: [Professional Templates, Rich Example Sentences, and Direct Paths to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [A Must-Have for Winning Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)
