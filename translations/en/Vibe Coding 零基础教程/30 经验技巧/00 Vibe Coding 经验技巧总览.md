@@ -47,31 +47,43 @@ These skills apply not just to Vibe Coding but also help you understand the esse
 
 ## 3. What does this section include?
 
-This section covers all aspects of Vibe Coding from entry to mastery, organized into four categories:
+This section covers every aspect of Vibe Coding, from getting started all the way to mastery.
 
-1) Foundational Thinking: Establishing proper development philosophies
+### Main Track Content (Recommended to Learn in Order)
+
+The content is divided into four major categories by theme:
+
+1) Foundational Thinking: Establish the right development mindset
 - Five core principles
 
-2) Core Skills: Mastering key AI development capabilities
-- Prompt engineering techniques
+2) Core Skills: Master the key capabilities of AI development
+- Conversation engineering techniques
 - Context management techniques
 - Handling hallucinations and infinite loops
 - Efficiency improvement techniques
 
-3) Quality Assurance: Ensuring project quality and performance
+3) Quality Assurance: Ensure project quality and performance
 - Code quality assurance
 - Code refactoring techniques
 - Performance optimization techniques
 - Security protection techniques
 
-4) Practical Advancement: Solving real-world development problems
+4) Practical Advancement: Handle real problems in actual development
 - Cost control techniques
 - Team collaboration techniques
 - Website beautification techniques
 
-All content is beginner-friendly. Even without programming knowledge, you can understand and apply it. Recommended to learn sequentially, or you can directly consult specific articles for particular problems.
+All of this content is beginner-friendly. Even if you don't know programming, you can still understand it and apply it. I recommend learning it in order, but if you run into a specific problem, you can also jump straight to the corresponding article.
 
-💡 This section will be continuously updated with more practical tips and experience sharing. [Bookmark this page](https://ai.codefather.cn/) to check for new content.
+### Optional Side Content
+
+Besides the main track, this section also includes some frontier articles on AI programming methodology. These are better suited for learners who already have some AI programming experience and want to level up further, so think of them as optional reading.
+
+For example, Harness Engineering teaches you how to build a complete, reliable work environment and process around AI, so AI can steadily handle large projects. Loop Engineering goes one step further, teaching you how to design automated loop systems so AI can execute and verify tasks on its own instead of needing you to supervise every step.
+
+There are also two articles about the latest changes in prompting. *Anthropic's Official Prompt Simplification Method* explains why Claude Code's official system prompt was cut by 80% without hurting results, and how we should simplify our own rule files. *Using grill-me to Let AI Interrogate Your Requirements* introduces a god-tier Skill that is only a few lines long but ranks in the top 3 by install count across the web, teaching you to think through your requirements clearly before writing code. These two articles form a great pair: one explains what to write less of, and the other explains how to clearly say what truly matters.
+
+💡 This section will continue to be updated, and more practical tips and experience sharing may be added in the future. [Bookmark this page](https://ai.codefather.cn/) and come back anytime to check the latest content.
 
 ## 4. How to study this section?
 
@@ -94,7 +106,9 @@ Time-constrained learners:
 
 ---
 
-These insights are distilled from the practices of many Vibe Coding experts and myself. Hope they help you avoid detours and master Vibe Coding faster. Keep going!
+These ideas come from the real-world practice of many Vibe Coding experts, as well as my own experience. I hope they help you avoid detours and master Vibe Coding faster. Keep going!
+
+If you want a more complete summary of the methodology, Yupi's video course [*AI Programming Practice for Complete Beginners*](https://www.bilibili.com/cheese/play/ss475098271) comes with the companion handbook *AI Programming Tips and Tricks Collection*. It systematically explains practical methodologies such as the five core principles, the four-step requirement breakdown method, and the three-step bug troubleshooting method. And if you run into any problem in the exclusive student community, you can ask me directly.
 
 ## Recommended Resources
 

@@ -506,11 +506,57 @@ Our team uses Yuque knowledge base to share documents. Everyone records issues e
 
 Teams can build some shared resources, such as:
 
-- Prompt Template Library: Commonly used prompt templates
-- Code Snippet Library: Commonly used components and functions
-- Issue Solution Library: Encountered issues and solutions
-- Best Practices Documentation: Summarized experiences and techniques
+- Prompt template library: Commonly used prompt templates
+- Code snippet library: Commonly used components and functions
+- Problem solution library: Problems you've encountered and how you solved them
+- Best practices documents: Summarized experience and techniques
 
-These resources help newcomers quickly get up to speed and improve the team's overall efficiency.
+These resources help newcomers get up to speed quickly, and they also improve the efficiency of the whole team.
 
-You can manage and share
+You can use Git + GitHub to manage and share code files, and you can also use various cloud-drive tools to store multimedia assets. Just choose the tools your team is most comfortable with.
+
+
+
+### Clear Division of Responsibilities
+
+Even if everyone is using AI, you still need a clear division of labor. Who is responsible for the frontend? Who handles the backend? Who owns testing? Who manages deployment? Everyone should have their own responsibilities, so you can avoid duplicated work or missing work.
+
+At the same time, avoid becoming overly dependent on AI. Don't let everyone rely on AI for everything—you need people who can step in when the AI fails. Keep the team's technical ability strong instead of relying entirely on tools.
+
+This is also why programmers are still crucial today—AI is only a tool. The people who truly understand the business, control quality, and make decisions are still humans. **So don't worry that AI will eliminate programmers. Programmers who know how to use AI will only become more powerful.**
+
+💡 Although in companies people usually divide work and collaborate, I recommend expanding your own ability boundaries as much as possible. Front-end engineers should know a bit of back-end, back-end engineers should know a bit of front-end, testers should know a bit of development, and so on. That helps you better understand the whole system and also lets you step in at critical moments. In the AI era, striving to become a **super individual** who can independently complete a full-stack project will make you much more competitive.
+
+
+
+## Final Thoughts
+
+Team-based development is far more complex than solo development, but it is also more valuable. A well-coordinated team + AI can build things that go far beyond what an individual + AI can achieve.
+
+Let me summarize the key points of this article. In team collaboration, you need to:
+
+1. Unify code standards: Use documentation and tools to make sure coding style stays consistent.
+2. Use the team features of AI tools: For example, Cursor Team Edition, Claude Projects, and so on, so you can share configuration, knowledge, and conversations, and let AI become the team's shared brain.
+3. Develop in a documentation-driven way: Write good documentation so team members can quickly understand the project.
+4. Standardize the Git workflow: Use branch management, commit conventions, and a PR process to ensure code quality.
+5. Take code review seriously: Review is not just a formality; it is key to improving quality.
+6. Build collaboration mechanisms: Regular syncs, pair programming, knowledge sharing, and shared resources.
+7. Clarify responsibilities: Everyone should have their own duties while still maintaining strong technical ability.
+
+Vibe Coding does not change the essence of team collaboration—it is just a tool. Good collaboration still depends on clear rules, good communication, and mutual trust.
+
+Thank you very much for reading 🙏🏻!
+
+
+
+## Recommended Resources
+
+1) Yupi's AI Navigation Site: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Codefather Learning Community: [Learning paths, programming tutorials, hands-on projects, job-hunting guides, discussions and Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Guide: [High-frequency topics for internships, campus recruiting, and social recruiting, plus real company problem analysis](https://www.mianshiya.com)
+
+4) Resume Builder for Programmers: [Professional templates, rich sample phrases, direct access to interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [A must-have for winning offers in internships, campus recruiting, and social recruiting](https://ai.mianshiya.com)

@@ -441,4 +441,112 @@ Users post their skills and skills they want to learn, exchanging skills for fre
 
 **93. Secondhand Trading Platform**
 
-Post and browse secondhand
+Post and browse secondhand items, with search, categorization, and private messaging support. It gives idle items a second life and helps people buy great things at low prices. You can add a credibility rating system to improve transaction safety. You can also support same-city trading to make offline exchanges more convenient.
+
+**94. Event Publishing Platform**
+
+Publish and sign up for events, with support for location, time, and participant limits. It can help organize offline events and let people meet new friends. You can add event reminder features to automatically notify users before an event. You can also support event check-ins to record participation.
+
+**95. Poll and Survey Platform**
+
+Create polls and questionnaires, then collect and analyze the results. It helps gather opinions quickly and make decisions. You can add multiple question types, such as single choice, multiple choice, and fill-in-the-blank. You can also generate data reports and visualize the results.
+
+**96. Confession Wall**
+
+Anonymously post confession messages with likes and comments. It's a classic campus-style app that lets people bravely express their feelings. You can add confession success-rate statistics to see how effective the confessions are. You can also support replies from the person being confessed to.
+
+**97. Wishlist Sharing**
+
+Share your wishlist so people can encourage and witness each other. It can make wishes easier to achieve and help users gain support from others. You can add wish progress tracking to record the realization process. You can also support crowdfunding for wishes so everyone can help make them come true.
+
+**98. Daily Image Sharing**
+
+Share one image every day, whether it's a photograph, illustration, meme, or anything else. It can cultivate aesthetic sense and help people discover beautiful things. You can add an image submission feature so users can upload pictures and participate in selections. You can also support an image calendar to review past images.
+
+**99. Voice Chat Room**
+
+Real-time voice chat with multi-user rooms, suitable for podcasts or discussions. It allows more natural communication and works well for in-depth conversations. You can add room topic features to create chat rooms for different subjects. You can also support recording playback to save great discussions.
+
+**100. Online Collaborative Documents**
+
+Multiple people edit documents in real time, similar to Google Docs, with support for comments and version history. It makes team collaboration more efficient and avoids file version chaos. You can add permission management to control editing and viewing access. You can also support document templates to quickly create commonly used documents.
+
+## 7. How to Turn Ideas into Reality?
+
+After seeing so many ideas, are you feeling tempted? But how do you actually turn an idea into reality?
+
+1) Choose one idea
+
+Pick the one you are most interested in from the 100 ideas above. Don't be greedy—work on only one project at a time.
+
+2) Clarify the core features
+
+Don't try to build every feature right from the start. First identify the 3-5 most essential features. The rest can be added later.
+
+For example, if you want to build a blog platform, the core features could be: publishing articles, browsing articles, and user registration/login. Features like comments, likes, and follows can be added later.
+
+3) Develop according to a standard process
+
+Follow the 5-step process we discussed in *The Standard Development Process*: research the requirements, write the PRD, write the technical design, write `AGENTS.md`, and then start development.
+
+This process may look a bit troublesome, but it can greatly improve your success rate. Trust me: spending 30 minutes writing documents can save you several hours of rework.
+
+4) Iterate quickly
+
+Don't chase perfection. First build a version that works, then iterate quickly. In each iteration, add only one or two features and make sure you can see progress every time.
+
+5) Share it and collect user feedback
+
+After the product is finished, share it with friends or post it on social media to collect user feedback. Then improve the product based on that feedback so it keeps getting better.
+
+### My Experience
+
+I've built many projects, some successful and some unsuccessful. Failed projects usually have one thing in common: **I wanted to do too much, and in the end I didn't do anything well.**
+
+Successful projects are the opposite. At the beginning, I only focused on the most essential features, and only after doing those well did I slowly add more. For example, when I built my *Learning Hero* mini program, it initially had only the core Q&A feature, and features like user statistics were added later.
+
+So my advice is: **start small, iterate quickly, and keep improving.** Don't dream about building a perfect product in one shot—that's unrealistic.
+
+### Getting Inspiration from AI Application Platforms
+
+Besides the ideas above, you can also get inspiration from the showcases on major AI application development platforms. These platforms have many applications created by users, and they can give you fresh ideas.
+
+Here are a few recommended platforms:
+
+1. OpenAI GPTs Store
+
+On [ChatGPT GPTs](https://chat.openai.com/gpts), you can see all kinds of GPT applications created by users, covering writing, programming, design, education, and many other fields. You can try these applications and think about which features could be implemented in the form of a website or mini program.
+
+![](https://pic.yupi.icu/1/image-20260112125511653.png)
+
+2. Doubao AI Application Platform
+
+On Doubao's [App Generation Platform](https://www.doubao.com/code/chat) and [Creation Plaza](https://www.doubao.com/code/launch), there are many creative applications. Most of them are quickly generated with AI and can provide excellent references. You can see what other people are building, which applications are popular, and then find your own direction from there.
+
+![](https://pic.yupi.icu/1/image-20260112125557162.png)
+
+There are many similar platforms as well, such as Character.AI, and they can all serve as sources of inspiration.
+
+But keep in mind: reference is not plagiarism. The key is to learn and innovate. When you see a good idea, think about how to make it better and how to add your own unique style. That's what gives you a better chance of success.
+
+## Final Thoughts
+
+That's all for this sharing. I hope you can find one project among these 100 ideas that you truly care about, and then build it using the Vibe Coding approach. Don't worry about whether it will be good enough, and don't be afraid of failure. Every project—whether it succeeds or fails—will help you grow.
+
+**Most importantly, enjoy the process of creation.**
+
+Using code to turn ideas into reality is already something incredibly cool in itself.
+
+Start your creative journey now. Good luck! 🛫
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Code Navigation Learning Circle: [Learning Paths, Programming Tutorials, Practical Projects, Job Hunting Guides, Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheet: [Internship/Campus Recruitment/Social Recruitment High-frequency Topics, Enterprise Question Analysis](https://www.mianshiya.com)
+
+4) Programmer Resume Builder: [Professional Templates, Rich Examples, Direct to Interview](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interview: [Essential for Internship/Campus Recruitment/Social Recruitment Interviews to Get Offers](https://ai.mianshiya.com)

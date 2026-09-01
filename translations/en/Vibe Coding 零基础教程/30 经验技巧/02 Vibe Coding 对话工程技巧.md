@@ -416,4 +416,106 @@ You: "I'm using React and TypeScript. Please help me write this input box compon
 
 AI: [Provides code]
 
-You: "Looks good.
+You: "Looks good. But I want the input box to be at the top of the page, take up the full width, and have a light blue border."
+
+AI: [Provides improved code]
+
+### Round 3: Add Functionality
+
+You: "Now when the user presses Enter, the task should be added to the task list. My task list is managed with useState."
+
+AI: [Provides the task-adding logic]
+
+You: "Great. But if the input box is empty, it shouldn't add a task."
+
+AI: [Adds validation logic]
+
+### Round 4: Optimize the Experience
+
+You: "After adding a task, the input box should clear automatically and keep focus so the user can add multiple tasks continuously."
+
+AI: [Adds clear and focus logic]
+
+You: "Perfect! Finally, can you show a brief success message when a task is added?"
+
+AI: [Adds the notification feature]
+
+---
+
+See? Through multiple rounds of conversation, we gradually refined this feature. Every step was small, easy to understand, and easy to test.
+
+## 9. Diving Deeper into Prompt Engineering
+
+What I covered above are practical skills for everyday conversations. But if you want to understand prompt engineering more deeply, one of the best ways is to study how well-known AI coding tools and large models design their own prompts. After all, these prompts are crafted by top teams in the industry and hide a lot of battle-tested best practices.
+
+### Studying Cursor's Prompt Design
+
+As one of the most popular AI coding tools, Cursor has a prompt design that is very worth studying. Its system prompt is more than 500 lines long and includes modules such as role definition, operating constraints, and tool usage instructions, reflecting many prompt engineering best practices.
+
+For example:
+- It uses repeated emphasis to make sure AI understands the key points.
+- It combines negative instructions (NEVER) and positive instructions (ALWAYS) to reinforce constraints.
+- It provides detailed explanations and usage examples for each tool.
+- It standardizes the output format so later processing is easier.
+
+I specifically recorded a video to break down Cursor's prompt design in detail: ["I Dug Into Cursor's Prompt and Was Seriously Amazed!"](https://www.bilibili.com/video/BV1bBaBzXEae/)
+
+If you're interested in prompt engineering, or if you want to build your own AI applications, I highly recommend watching this video.
+
+### Studying Claude Fable 5's Prompt Design
+
+In June 2026, the complete system prompt for Claude Fable 5 was leaked: a massive 120,000 characters and about 30,000 tokens. Although this was a system prompt designed for an AI product, the design ideas inside it are equally applicable to the rule files we write in daily work, such as `CLAUDE.md` and `AGENTS.md`.
+
+After studying this prompt, I found several design ideas that are especially worth learning from:
+
+**1) Focus on "what AI can do" instead of "who AI is."** More than half of the tokens in this prompt were spent on tool definitions and search rules, while the identity statement "You are Claude created by Anthropic" appeared close to the very end. So when writing prompts, instead of spending a lot of space on persona design, it's better to focus your effort on tool usage rules and concrete behavioral guidelines.
+
+**2) Turn the pitfalls you've encountered into explicit rules.** The prompt contains many seemingly strange hard-coded rules, such as "Searching latest iPhone 2025 in 2026 will return outdated results, so you should search latest iPhone 2026 instead." Behind every such rule is a real pitfall users actually ran into. The same applies when you write prompts yourself: if AI makes a mistake in real use, the best fix is to directly write that concrete failure scenario into the rules.
+
+**3) Set quantitative thresholds for search behavior.** Many people write only a vague instruction like "search when necessary," but Anthropic turned search into an actual decision-making process: don't search for unchanging facts (like the Pythagorean theorem); you must search for information whose status may change (like who a company's CEO is); it even defines ranges such as "search once for simple questions, 3-5 times for medium questions, and 5-10 times for deep research." The more measurable the instruction is, the easier it is for AI to follow.
+
+**4) Output format affects the user experience.** One rule in the prompt says that when refusing a request, AI must not use a list format. That's because lists can feel cold and mechanical, while refusals need warmth and empathy. If you're building AI customer service or AI companion products, formatting isn't just a typography issue—it affects the user's emotional experience.
+
+### Other Learning Resources
+
+- [Alibaba Cloud Bailian Prompt Guide](https://help.aliyun.com/zh/model-studio/prompt-engineering-guide): A systematic tutorial on writing prompts
+- [Yupi's AI Resource Navigation](https://ai.codefather.cn/prompt): A curated library of prompt templates
+- [Yupi's AI Knowledge Base](https://github.com/liyupi/ai-guide): Open-source AI learning resources
+
+## Final Thoughts
+
+Conversation engineering is one of the most important skills in Vibe Coding. It's not simply about "writing prompts"—it's an ongoing, two-way, iterative communication process.
+
+Let me summarize the key takeaways:
+
+1. Replace prompt thinking with conversation thinking: treat your interaction with AI as a collaboration, not as giving orders.
+
+2. Start big, then refine gradually: first establish the overall direction, then dive into the details.
+
+3. Be specific, not abstract: use clear and concrete language to describe your requirements.
+
+4. Make good use of follow-up questions and correction: don't settle for the first answer; use follow-up questions to make it better.
+
+5. Guide instead of command: use constraints, role-playing, and other techniques to guide AI toward better answers.
+
+6. Avoid common pitfalls: don't ask too much at once, and don't assume AI has perfect memory.
+
+Once you master these techniques, you'll be able to have efficient conversations with AI and make it a truly capable assistant.
+
+One final reminder: when I said "be specific," I meant clearly explaining your requirements and goals—not rigidly specifying every single step of how the work must be done. As models get more and more powerful, overly detailed long prompts can actually limit their performance. If you want to understand where that boundary lies, read *Anthropic's Official Prompt Simplification Method* in this section.
+
+In the next article, I'll explain **context engineering** and teach you how to manage project information so AI can always understand your project.
+
+Keep going, future Vibe Coding master! 💪
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Code Navigation Learning Circle: [Learning Paths, Programming Tutorials, Practical Projects, Job Hunting Guides, Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheet: [Internship/Campus Recruitment/Social Recruitment High-frequency Topics, Enterprise Question Analysis](https://www.mianshiya.com)
+
+4) Programmer Resume Builder: [Professional Templates, Rich Examples, Direct to Interview](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interview: [Essential for Internship/Campus Recruitment/Social Recruitment Interviews to Get Offers](https://ai.mianshiya.com)

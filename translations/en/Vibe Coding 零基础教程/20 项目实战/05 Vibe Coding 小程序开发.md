@@ -378,4 +378,120 @@ Mini Program reviews may encounter some issues. Here are a few common ones.
 
 4) Content violations. The Mini Program’s content may violate WeChat’s guidelines, such as containing inappropriate material. Carefully read WeChat’s Mini Program operational guidelines to ensure compliance.
 
-If the review fails, you’ll receive the rejection reason. Make the necessary changes and
+If the review fails, you'll receive the reason for rejection. Make the necessary changes based on it and resubmit for review.
+
+**Don't get discouraged—many Mini Programs are rejected the first time, and that's completely normal.**
+
+
+
+## 5. My Experience Launching the "Study Hero" Mini Program
+
+Finally, I'd like to share my real experience launching the **Study Hero** Mini Program, and hopefully it can give you some inspiration.
+
+**Study Hero** is an AI-guided learning Mini Program in a Q&A format. Users can enter a topic they want to learn, and the AI automatically generates related knowledge Q&A cards, guiding users to master knowledge in a lighter and more enjoyable way through a level-based quiz experience.
+
+![](https://pic.yupi.icu/1/%25E5%25B0%258F%25E7%25A8%258B%25E5%25BA%258F%25E6%25BC%2594%25E7%25A4%25BA%25E6%258B%25BC%25E5%259B%25BE.png)
+
+The development process was actually very fast. With AI coding tools, I basically finished the Mini Program—with a complete front end, back end, and AI capabilities—in just one day. But can you believe it? It still took me almost **two months** to officially launch it?!
+
+In the old days, even I wouldn't have believed it. I remember that back in college, launching a Mini Program was pretty quick. Looks like times really have changed.
+
+
+
+### The Complete Launch Process
+
+1) Mini Program Filing
+
+This step didn't exist at all before, but starting from **September 1, 2023**, all newly developed WeChat Mini Programs must complete filing before they can be published.
+
+The filing process itself is free. You mainly need to fill in some personal or company information in the backend. However, the review cycle takes about **2 to 22 business days** (including review by the Ministry of Industry and Information Technology). I submitted my filing before the National Day holiday and only got approved 12 days later. It might have been faster if it hadn't been a holiday period.
+
+2) Mini Program Category Application
+
+Because my Mini Program used an AI large model for Q&A, I needed to add the **"Deep Synthesis - AI Q&A"** category, otherwise it wouldn't pass the code release review.
+
+![](https://pic.yupi.icu/1/image-20251203212944981.png)
+
+So I followed the modification guide and tried to add the category. But it turned out that adding an AI-related category requires qualification documents! Because I was using someone else's large model, I needed documents such as the **Internet Information Service Algorithm Filing** and the **Cooperation Agreement Between the Mini Program Entity and the Technical Entity**.
+
+![](https://pic.yupi.icu/1/5b7bf1460d71ff74477082606e6e7cf8.png)
+
+What? A cooperation agreement too?! I bet this step alone scares off a huge number of beginners. I had a headache the moment I saw it too.
+
+![](https://pic.yupi.icu/1/image-20251203215116730.png)
+
+But don't panic. Whichever AI large-model service you're using, just contact the corresponding staff directly and ask for the required materials. For example, I used Alibaba Cloud's large-model service, so I contacted customer support through the official website. Their technical support responded quickly and was very helpful. You just need to explain your needs clearly, and they'll help you handle it.
+
+![](https://pic.yupi.icu/1/image-20251203195218556.png)
+
+After spending about 10 days, I successfully obtained the materials needed for the category application. Then I just had to submit the application.
+
+3) Code Release Review
+
+It really feels like Mini Program reviews are getting stricter and stricter now. Especially for new Mini Programs, it's very easy to get rejected for unexpected reasons.
+
+For example, I ran into this case: because one button in the Mini Program didn't respond when clicked, the submission was rejected.
+
+![](https://pic.yupi.icu/1/%25E5%25B0%258F%25E7%25A8%258B%25E5%25BA%258F%25E5%25AE%25A1%25E6%25A0%25B8-%25E4%25B8%258D%25E9%2580%259A%25E8%25BF%2587%25E7%259A%2584%25E5%258E%259F%25E5%259B%25A0.png)
+
+I'm not taking the blame for that—who told the AI to slack off?!
+
+So I asked a teammate to help add a click-triggered popup, and then we resubmitted it for review.
+
+![](https://pic.yupi.icu/1/%E5%B0%8F%E7%A8%8B%E5%BA%8F%E5%AE%A1%E6%A0%B8-%E8%A1%A5%E4%BA%86%E4%B8%AA%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC%E7%9A%84%E4%BF%A1%E6%81%AF.png)
+
+After about 2 to 3 days, the code review finally passed.
+
+4) However, because my Mini Program also involved the **"social"** category, I had to enter step four: Mini Program reporting.
+
+![](https://pic.yupi.icu/1/image-20251203214139938.png)
+
+When I saw that **7 days × 24 hours** review duration at the time, even the drumstick I was chewing on suddenly tasted bland...
+
+Fortunately, after another 7 days, my Mini Program was finally published. It really wasn't easy!
+
+Let's review the full process:
+
+![](https://pic.yupi.icu/1/image-20251203195031382.png)
+
+
+
+### Lessons Learned
+
+Although this Mini Program launch took me nearly two months, some of the delay in the middle was simply because I didn't notice the notifications in time. But even if you only count the mandatory steps, it still takes about one month.
+
+If you only want to build a simple utility Mini Program, and it doesn't involve AI capabilities or categories that require reporting (such as social, finance, healthcare, etc.), you should be able to save quite a bit of time.
+
+![](https://pic.yupi.icu/1/0.png)
+
+However, I suspect a lot of students now want to build **a Mini Program with AI features**, so I still recommend the following:
+
+1. Apply for the Mini Program category early: if AI features are involved, prepare the qualification materials as early as possible.
+2. Build the minimum viable version first: create a demo that can pass review and let you go through the full release process once.
+3. Plan your time as a whole: development may only take a few days, but the release process may take weeks or even months.
+4. Test thoroughly before review: make sure every feature works properly so you don't get rejected for small issues.
+5. Provide detailed testing instructions: offer test accounts and clear step-by-step review instructions.
+
+
+
+## Final Thoughts
+
+Through these 2 Mini Program projects, you've already learned the basic workflow of Mini Program development. More importantly, you've learned how to actually launch a project and let real users use it.
+
+Mini Program development does have some special characteristics compared with Web development, but the core ideas are connected. With the Vibe Coding approach, you can quickly build fully functional Mini Programs. If you want to learn more Mini Program development tips and best practices, you can refer to the **Tips & Tricks** section of this tutorial.
+
+After completing Mini Program development, in the next article I'll teach you how to deploy all kinds of projects to the internet, so people all over the world can access your work.
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Paths, Programming Tutorials, Hands-on Projects, Job-Hunting Guide, Community Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Real Company Interview Analysis](https://www.mianshiya.com)
+
+4) Resume Tool for Programmers: [Professional Templates, Rich Example Sentences, Direct Access to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [Essential for Landing Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

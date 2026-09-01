@@ -44,3 +44,94 @@ This tutorial covers every aspect of Vibe Coding. From zero basics => creating y
 I've carefully structured the content for seamless learning or quick access to relevant sections.
 
 - **Essentials**: Quickly understand Vibe Coding and get hands-on
+- **Programming Tools**: Help you choose the AI coding tools that suit you best, including AI model selection, AI no-code platforms, AI agent platforms, AI code editors, AI command-line tools, IDE plugins, and more
+- **Project Practice**: Hands-on guidance to build real, usable products from 0 to 1, covering personal tools, AI applications, full-stack apps, mini programs, and more
+- **Tips and Techniques**: Help you improve Vibe Coding efficiency and quality, including core principles, conversation engineering, context management, hallucination handling, code quality assurance, and more
+- **Product Monetization**: Teach you how to make products create value, covering requirement analysis, technology selection, architecture design, monetization models, SEO optimization, self-media operations, and more
+- **Programming Learning**: Advanced content for students who want to dive deeper into programming, including learning paths, knowledge encyclopedias, resource collections, MCP development, interview prep, and more
+- **Resource Vault**: A collection of practical resources, including tool collections, prompt templates, AI concept encyclopedias, common Vibe Coding problems, and more
+
+![](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AE%E7%9A%84%20AI%20%E5%AF%BC%E8%88%AA-3%E6%AF%944%E5%A4%A7%E7%BA%B2_%E5%89%AF%E6%9C%AC.jpg)
+
+This tutorial is not a pile of boring theory. It is practice-centered, packed with rich project cases and lots of screenshots, guiding you step by step to learn by doing and truly master Vibe Coding.
+
+![Yupi AI Navigation - Rich Tutorial Illustrations](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AE%E7%9A%84%20AI%20%E5%AF%BC%E8%88%AA-%E6%95%99%E7%A8%8B%E5%9B%BE%E6%96%87%E5%B9%B6%E8%8C%82.png)
+
+
+
+## Who Is This Tutorial For?
+
+**1) Anyone who wants to use AI to improve efficiency**
+
+If you once wanted to learn programming but got scared off by complex syntax and hard-to-understand concepts; or you have a good idea and want to quickly build and launch your own product; or you simply want to use AI to improve daily office efficiency and make small tools to solve repetitive work. With Vibe Coding, you can get started in just a few days and program as naturally as chatting.
+
+**2) Programmers who want to improve efficiency**
+
+If you’re a traditional programmer who’s being tortured by repetitive code every day and wants to smash the keyboard, Vibe Coding can boost your productivity by dozens of times. The tutorial’s techniques and project practice can help you quickly level up into a Vibe Coding expert.
+
+**3) Entrepreneurs who want to monetize products**
+
+If you want to turn ideas into products and make money, this tutorial not only teaches you how to build products, but also how to make them valuable. From requirement analysis to monetization models, from SEO optimization to self-media operations, I’ll share all my experience from building 10+ self-developed products and growing from 0 to 2 million followers.
+
+![Yupi AI Navigation - Product Experience](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AE%E7%9A%84%20AI%20%E5%AF%BC%E8%88%AA-%E6%95%99%E7%A8%8B%E4%BA%A7%E5%93%81%E7%BB%8F%E9%AA%8C.png)
+
+
+
+## Where Should You Start Learning?
+
+**Complete beginners**
+
+- Day 1: Finish the essentials, understand Vibe Coding, and build your first project
+- Weeks 1–2: Learn AI coding tools and build a few simple projects
+- After that: Learn tips, techniques, and product monetization as needed
+
+**People with programming foundations**
+
+- Day 1: Quickly go through the basics and complete the rapid-start tutorial
+- Week 1: Learn mainstream AI coding tools and try refactoring your previous projects
+- After that: Focus on advanced techniques to improve your conversation and context management abilities
+
+Practice is the best teacher. No matter what your background is, you should build more projects while learning, encounter problems in real projects, and solve them there. That is the most effective way to learn.
+
+![Yupi AI Navigation - AI Coding Tips](https://pic.yupi.icu/1/%E9%B1%BC%E7%9A%AE%E7%9A%84AI%E5%AF%BC%E8%88%AA-%E6%95%99%E7%A8%8B%E7%BB%8F%E9%AA%8C%E6%8A%80%E5%B7%A7.png)
+
+
+
+## Final Words
+
+I have always believed that knowledge sharing creates mutual benefit.
+
+This tutorial is completely free and open source, and I hope it can help more people open the door to Vibe Coding.
+
+But since it is written by one person after all, there will inevitably be shortcomings. I will keep updating and improving the content.
+
+**If this tutorial helps you, I hope you can give it a like or a Star ⭐️ to support it!**
+
+Don’t hesitate. Open the tutorial now, and 10 minutes later you’ll be able to build your first project. Start your Vibe Coding journey with Yupi! 🛫
+
+
+
+📖 Tutorial documentation open-source repo: https://github.com/liyupi/ai-guide
+
+🌐 Online reading: https://ai.codefather.cn/vibe
+
+🎬 Author’s video collection: https://space.bilibili.com/12890453
+
+💬 Feedback and discussion: feel free to ask questions in the [AI Navigation Community](https://ai.codefather.cn)
+
+
+
+## Contributions Welcome
+
+This tutorial is open source, and everyone is welcome to help improve it together~
+
+If, during learning, you:
+
+- find typos or awkward wording
+- have better image examples or project cases
+- want to add introductions to new AI tools
+- discover new Vibe Coding techniques
+- have practical prompt templates you want to share
+- or have any other idea that could make this tutorial better
+
+you can directly submit a PR (Pull Request) on GitHub. Let’s polish this tutorial together and help more people learn Vibe Coding!

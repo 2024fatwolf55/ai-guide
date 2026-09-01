@@ -311,4 +311,206 @@ Compile search results into a complete design scheme (primary colors, font combi
 
 Finally, generate code according to the design scheme:
 
-![](https://pic.y
+![](https://pic.yupi.icu/1/1769307794443-ffc76a7e-24e9-4e4d-b973-ef97285fd32b.png)
+
+As a result, the generated interface becomes both professional and full of design sense.
+
+![](https://pic.yupi.icu/1/1769307819333-fef63881-90b7-4248-8ca7-35354f8a7a7a.png)
+
+AI doesn’t need to memorize every rule in advance—it only looks up the one it needs when it needs it. That’s the essence of Agent Skills.
+
+## 6. Skill Repositories
+
+At present, the [official Anthropic Skills repository](https://github.com/anthropics/skills) already provides a rich collection of skills covering frontend design, webpage testing, and many office-related tasks such as PPT creation, Excel processing, Word documents, PDF generation, and more.
+
+The Skills community is also very active, and you can find lots of ready-made skills in the following places:
+
+- ⭐️ [Yupi AI Navigation - Skills Collection](https://ai.codefather.cn/skills): continuously updated high-quality skills that unlock more of AI’s execution potential
+- [Claude Skills Hub Marketplace](https://www.claudeskill.site/zh/skills): a community skill marketplace
+- [Awesome Claude Skills](https://github.com/ComposioHQ/awesome-claude-skills): an open-source list of skills
+- [mattpocock/skills](https://github.com/mattpocock/skills): a personal skill library with 180k stars, packaging software engineering methodologies such as TDD and bug diagnosis into Skills. For a detailed introduction, you can read *Matt Pocock Skills: A Real Engineering Skill Library* in this section.
+
+![](https://pic.yupi.icu/1/image-20260201150711260.png)
+
+## 7. Creating Your Own Agent Skills
+
+After using lots of other people’s skills, you might start thinking: can I package my company’s weekly report format into a skill? Then recommend it to new teammates later—or even sell it for a few bucks, hehe~
+
+Of course you can! Creating your own Agent Skills is actually very simple.
+
+### Method 1: Create It Manually
+
+You can use the thing programmers are best at—copy and paste!
+
+![](https://pic.yupi.icu/1/1769307876115-a6e9c6ce-df5a-48c0-9330-120441bd5e28.jpeg)
+
+First, copy an official skill package and rename the directory to your own.
+
+Then modify the key parts of the `SKILL.md` skill description file, such as metadata and instruction content.
+
+![](https://pic.yupi.icu/1/1769307911844-3b48f4ab-6aa4-4c96-8bcf-8d30bd1475a3.png)
+
+Sample `SKILL.md` file:
+
+```markdown
+---
+name: company-weekly-report
+description: Generate project weekly reports that follow company standards, including progress summary, issue tracking, and next-week plans
+---
+
+# Company Weekly Report Generation Skill
+
+When the user asks to generate a weekly report, please follow these steps:
+
+## 1. Gather Information
+- Ask about the main work completed this week
+- Ask about the problems encountered and the solutions
+- Ask about next week’s plan
+
+## 2. Formatting Standards
+- Use the company’s blue theme
+- Use bold Microsoft YaHei for headings
+- Each section should contain no more than 5 key points
+
+## 3. Output Format
+- Output Markdown by default
+- If PPT is needed, call the `pptx` skill
+```
+
+Finally, just put the company logo, PPT templates, and sample reports into subfolders. Now my mom never has to worry about my weekly reports again~
+
+![](https://pic.yupi.icu/1/1769307957544-4bcb77d5-71f4-48c5-a51e-a830b7ef4f36.png)
+
+### Method 2: Use Skill Creator
+
+There’s actually an easier and more standardized way.
+
+In the official `example-skills` example skill pack installed earlier, there is a skill called `Skill Creator`, which is specifically used to help you create new skills.
+
+![](https://pic.yupi.icu/1/1769307969338-97a16e2a-6581-4215-b399-7aa30f715ad1.png)
+
+You only need to tell AI: “Help me create a skill specifically for generating company weekly reports.”
+
+Next, AI will ask you several questions, and you can just answer them step by step:
+
+- What main sections do you want the weekly report to include?
+- In what format do you want the weekly report output?
+- How do you usually use this weekly report skill?
+- What language style do you want for the weekly report?
+
+![](https://pic.yupi.icu/1/1769307998192-27ac24c2-c732-401d-a19e-ebe07086d73b.png)
+
+Very quickly, a complete skill package will be generated. You’ll see a file with the `.skill` extension, which is essentially a ZIP archive.
+
+![](https://pic.yupi.icu/1/1769308022759-0eb5bf27-e953-4a32-85e0-9524c0ff5ab0.png)
+
+### Where Skills Are Installed
+
+After creating a skill, you can:
+
+1) Use it globally for yourself: extract it into your personal skill directory (`~/.claude/skills/`), and all your projects can use it
+
+![](https://pic.yupi.icu/1/1769308081516-c52a79cc-0251-42d4-aaac-f08b1e38ef9e.png)
+
+![](https://pic.yupi.icu/1/1769144854626-88c27a17-fa9d-4f6a-ba94-3747d61e0129.png)
+
+2) Use it inside a project: put it into the project’s `.claude/skills/` directory and sync it to other members of the project team with Git
+
+![](https://pic.yupi.icu/1/1769308107094-ea5207a7-e231-45ee-a449-b42e13410f74.png)
+
+![](https://pic.yupi.icu/1/1769144884089-6766753a-d945-446b-99ac-06dcd041a205.png)
+
+3) Share it with the community: open-source it on GitHub, or upload it to community platforms like [Claude Skills Hub](https://www.claudeskill.site/zh/skills) so all users can use it
+
+![](https://pic.yupi.icu/1/1769308134560-8cea0cba-cd0f-4610-aff0-38165872b586.png)
+
+## 8. The Difference Between Skills / MCP / Slash Commands
+
+You might be curious: what’s the difference between Agent Skills, MCP, and slash commands?
+
+**MCP is like giving AI “hands and eyes”**, allowing it to connect to external tools and data sources such as websites, code repositories, and databases. It’s suitable for scenarios where AI needs to obtain data or operate external systems.
+
+![](https://pic.yupi.icu/1/1769308152531-a3770991-fc9c-4c44-b401-12c39a661d73.png)
+
+**Agent Skills, on the other hand, are more like giving AI a “work handbook.”** They package up professional knowledge and workflows to teach AI how to do things in a specific field.
+
+![](https://pic.yupi.icu/1/1769308164192-a35405c9-b8e0-480a-900b-6503b81f440a.png)
+
+As for slash commands, they are more like shortcuts: you need to manually type a `/command` to trigger a fixed operation. Skills are different because AI can automatically recognize which skill should be used, without requiring you to call it explicitly.
+
+![](https://pic.yupi.icu/1/1769308180272-b4e2ecf6-7577-407d-99df-156f44c34c9b.png)
+
+In fact, MCP and Skills can work together. For example, if you want AI to help send a weekly report:
+
+- MCP is responsible for getting the data: pulling this week’s task list from the task management database
+- Skills are responsible for processing the data: organizing the raw data into a format your boss likes to read
+
+One provides the ingredients, and the other provides the recipe.
+
+![](https://pic.yupi.icu/1/1769308199144-45b3b07a-b27d-45e1-91ce-ca0afaced11c.png)
+
+## 9. Why Have Agent Skills Become So Popular?
+
+You might think: wait a second, isn’t this just the same old thing programmers have been doing forever—encapsulation, reuse, modularization, and lazy loading?
+
+![](https://pic.yupi.icu/1/1769308235063-6469135d-6e72-4698-b040-0b9019fe29cd.png)
+
+Write a few code files, package them, publish them online, and let other programmers download them—how is this any different?
+
+![](https://pic.yupi.icu/1/1769308248099-97a33447-0873-436a-b923-a15fd489bdc8.png)
+
+So why can Agent Skills suddenly make the entire AI world go crazy???
+
+From a technical point of view, it didn’t invent any earth-shattering new algorithm. In my opinion, it became popular mainly for two reasons.
+
+First, it is an **open standard**. Once you package a skill, it can be reused across all kinds of AI tools and shared through the community.
+
+![](https://pic.yupi.icu/1/1769308267503-7e42f21e-a9f3-46ad-b64e-eb389536194e.png)
+
+More importantly, Skills can immediately make AI’s work more professional and reliable, letting ordinary people enjoy the value of the technology almost “without noticing it.” In the past, if you wanted AI to become smarter, you had to learn prompt engineering and configure all sorts of toolchains. Now you only need to install a skill pack like installing an app, and AI instantly becomes more professional. The success of a technology isn’t about how complex it is—it’s about whether ordinary users can feel its value without needing to care about the technical details.
+
+![](https://pic.yupi.icu/1/1769308278928-c64c92b1-6530-43e7-a35e-cfb6eeec975d.png)
+
+**Lowering the barrier is the real key to bringing technology to the masses.**
+
+To summarize, the biggest advantages of Agent Skills are:
+
+1. Reusability: install a skill once and use it directly later, without repeatedly typing the same prompts
+2. Cross-tool compatibility: a skill you install in Claude Code can also be used later in other tools such as Cursor
+3. Community-driven: anyone can create and share skills, letting you benefit from the wisdom of the whole community
+4. Lower barrier to entry: as simple as installing an app, allowing ordinary users to make AI more professional too
+
+## Final Words
+
+If you’ve read this far, I believe you now have a comprehensive understanding of Agent Skills.
+
+**Agent Skills let AI quickly learn new abilities without requiring you to retype prompts every time.** At their core, they package professional knowledge and workflows into reusable skill packs, and through the progressive disclosure mechanism, AI loads them on demand—improving professionalism while also saving context space.
+
+Agent Skills are not just a technical concept, but a new way of working. You can integrate them into your daily work—for example, packaging repetitive tasks into skills, or turning your team’s best practices into skills—so AI truly becomes a capable assistant.
+
+I recommend that you:
+
+1. First install a few official skills to experience the convenience of Agent Skills
+2. Try using community skills in other tools such as Cursor
+3. Package repetitive tasks from your work into your own skills
+4. Share your skills with the community to help more people
+
+In the Vibe Coding era, the barriers of technology are collapsing, while the boundaries of imagination are expanding without limit.
+
+Let’s explore more possibilities of Agent Skills together!
+
+💡 Want more high-quality Skills resources? Read the Agent Skills chapter in *Top AI Programming Extensions Recommendations*, which includes a summary of Skills installation and management tools, resource platforms, and must-install recommendations.
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Yupi’s Vibe Coding Tutorial: [A Free and Open-Source AI Programming Tutorial for Absolute Beginners](https://github.com/liyupi/ai-guide)
+
+3) Programming Navigation Learning Circle: [Learning Roadmaps, Programming Tutorials, Hands-on Projects, Job-Hunting Guides, and Q&A](https://www.codefather.cn)
+
+4) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Plus Real Company Question Analysis](https://www.mianshiya.com)
+
+5) Resume-Building Tool for Programmers: [Professional Templates, Rich Example Sentences, and Direct Paths to Interviews](https://www.laoyujianli.com)
+
+6) 1-on-1 Mock Interviews: [A Must-Have for Winning Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

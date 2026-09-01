@@ -37,6 +37,87 @@ Below are the enterprise-level AI project tutorials on the Code Navigation platf
 
 👉🏻 You can also directly visit the [Code Navigation AI Project Learning Zone](https://www.codefather.cn/course?sortField=priority&tags%5B%5D=AI%E9%A1%B9%E7%9B%AE) to view all AI projects.
 
+### AI Universal Video Download & Summarizer
+
+An AI-powered universal video download and summarization tool built with Vue 3 + FastAPI + yt-dlp + DeepSeek + Stripe, with Vibe Coding at its core and Cursor used for AI programming throughout the entire process. It supports downloading videos from 1,800+ platforms such as Bilibili, YouTube, and Douyin, then uses AI to automatically extract subtitles and generate summary abstracts, interactive mind maps, and video Q&A. It also integrates JWT user authentication and Stripe international payments, making it a real SaaS product that can be launched and monetized.
+
+Target audience: Learners who want to build tool-type AI products for commercial monetization, while mastering Python backend development and international payment integration.
+
+[👉🏻 Start Learning](https://www.codefather.cn/course/2027618983506640897)
+
+Technical highlights:
+- Cursor AI programming + MCP plugins + Agent Skills
+- SubAgents parallel development
+- yt-dlp multi-platform video download engine
+- DeepSeek large-model AI summarization and Q&A
+- SSE streaming data transfer
+- Stripe international payments + Webhook
+- JWT user authentication and permission control
+- SEO and GEO search optimization
+
+![Yupi AI Universal Video Download & Summarizer Project](https://pic.yupi.icu/1/AI%E4%B8%87%E8%83%BD%E8%A7%86%E9%A2%91%E4%B8%8B%E8%BD%BD%E5%99%A8%E4%B8%BB%E9%A1%B5.png)
+
+### AI Hotspot Monitoring Tool
+
+An AI hotspot monitoring tool built with Express 5 + React 19 + OpenRouter + Socket.io, centered around Vibe Coding and developed throughout with VSCode + GitHub Copilot. The system automatically aggregates and crawls content from 8+ information sources such as Twitter, Bing, and Bilibili, then uses AI for authenticity detection and relevance analysis, pushing updates in real time via WebSocket and email notifications. The hotspot monitoring capability is also packaged as Agent Skills.
+
+Target audience: Learners who want to quickly experience the full Vibe Coding workflow and learn how to build tool-oriented products. Even complete beginners can follow along.
+
+[👉🏻 Start Learning](https://www.codefather.cn/course/2026625439052627970)
+
+Technical highlights:
+- VSCode + GitHub Copilot AI programming
+- MCP plugins (Firecrawl + Context7)
+- Agent Skills development
+- OpenRouter unified access to multiple large models
+- Multi-source aggregated crawlers
+- WebSocket real-time push
+- Query Expansion
+- Aceternity UI for a futuristic frontend
+
+![Yupi AI Hotspot Monitoring Tool Project](https://pic.yupi.icu/1/image-20260304102630302.png)
+
+### AI Level-based Learning Mini Program
+
+A WeChat mini program built with Taro 4 + Python FastAPI + LangChain + LangGraph + DeepSeek. Users enter the knowledge they want to learn, and AI automatically searches the web, generates questions, explains while you progress through levels, and provides a review report after you finish. Vibe Coding is the core approach, with GitHub Copilot + Claude Code used for AI programming throughout. In this project, you'll practice the Taro cross-platform mini-program framework, DeepSeek large-model question generation, the Tavily web-search Agent, the Chroma vector database RAG knowledge base, AI image generation + Tencent Cloud COS object storage, and OpenSpec specification-driven development + Harness Engineering to drive the AI programming workflow, finishing with the full process of mini-program filing, review, and official release.
+
+Target audience: Learners who want to build monetizable mini-program products with AI programming and master the full Python + AI application development workflow. Even complete beginners can follow along.
+
+[👉🏻 Start Learning](https://www.codefather.cn/course/2037104890135748610)
+
+Technical highlights:
+- GitHub Copilot + Claude Code AI programming
+- MCP plugins (Firecrawl + Context7 + Playwright)
+- Agent Skills capability expansion
+- OpenSpec specification-driven development
+- Taro 4 cross-platform mini-program framework
+- LangChain + LangGraph ReAct Agent
+- Chroma vector database RAG knowledge base
+- AI image generation + Tencent Cloud COS object storage
+- Docker containerization + WeChat Cloud Hosting deployment
+
+![Yupi AI Level-based Learning Mini Program Project](https://pic.yupi.icu/1/1-project-demo-overview.png)
+
+### GitHub Documentation Translation Tool
+
+An AI documentation translation SaaS platform for GitHub repositories, built with Next.js + GitHub App + OpenRouter, with Vibe Coding at its core and Cursor used for AI programming throughout the whole process. Just enter any GitHub repository URL, and AI will automatically translate the docs into 20 languages and create a PR. It also supports incremental translation via Webhook automation.
+
+Target audience: Learners who want to build overseas-oriented tools and SaaS products with AI programming, while mastering GitHub App development.
+
+[👉🏻 Start Learning](https://www.codefather.cn/course/2014303010343092226)
+
+Technical highlights:
+- Cursor AI programming + MCP plugins
+- Next.js integrated full-stack architecture
+- Secure authorization with GitHub App
+- GitHub Webhook incremental translation
+- OpenRouter unified access to multiple large models
+- Prisma ORM type-safe database
+- Ngrok intranet penetration debugging
+- One-click deployment on Vercel
+
+![Yupi GitHub Documentation Translation Tool Project](https://pic.yupi.icu/1/1769079926879-90640105-2d23-418c-b4b5-e962eab31299-20260225144931498.png)
+
 ### AI No-code Application Generation Platform
 
 An enterprise-level AI code generation platform developed with Spring Boot + LangChain4j + LangGraph4j + Vue 3, comparable to major tech companies. This is a microservices full-stack project focusing on AI development + backend architecture, featuring AI agents, AI workflows, various design patterns, Spring Cloud + Dubbo microservices architecture, and multi-dimensional system optimization.

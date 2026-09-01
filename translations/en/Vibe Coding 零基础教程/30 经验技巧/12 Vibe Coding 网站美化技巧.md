@@ -358,4 +358,321 @@ You despise cookie-cutter SaaS templates, pursuing warmth in every pixel.
 - No sentence over 15 words
 
 ### Image System
-- Icons: Use Iconify icon library
+- Icons: Use Iconify icon library (https://iconify.design)
+- Placeholder images: Use Picsum Photos (https://picsum.photos)
+- Real photos: Search on Pexels (https://www.pexels.com)
+- Illustrations: Use unDraw (https://undraw.co)
+```
+
+Save this file as `AGENTS.md` and put it in your project root. From then on, every time you talk to the AI, it will automatically read this file and work according to your requirements.
+
+![](https://pic.yupi.icu/1/1769601809476-e38cc355-3b1d-4b5c-af19-733829e0628c.png)
+
+For example, give it the exact same prompt as before — "Help me build an anime video website." With the rule file in place, the difference is immediate!
+
+![](https://pic.yupi.icu/1/1769601868173-f9e1ff80-8bd6-468a-bdf3-4d1ebbea7552.png)
+
+
+
+### Method 5: Agent Skills
+
+If writing prompts yourself feels too troublesome, there’s an even easier option — **Agent Skills**.
+
+Simply put, Agent Skills are professional skill packs packaged by other people. You can install them directly into AI coding tools so the AI learns all kinds of specialized abilities, like making PPTs, organizing Excel sheets, and more.
+
+![](https://pic.yupi.icu/1/1769601927834-226e857f-9dbb-4eca-a1d3-255fd1e0638d.jpeg)
+
+If you want AI to build prettier and more distinctive websites, try these 2 Skills.
+
+#### Frontend-design
+
+This is Anthropic’s official [frontend design skill](https://github.com/anthropics/skills/tree/main/skills/frontend-design), which teaches AI to generate websites with a professional design feel.
+
+Using it is simple. Take Claude Code as an example.
+
+First, open Claude Code and run this command to add the official skill marketplace:
+
+```plain
+/plugin marketplace add anthropics/skills
+```
+
+![](https://pic.yupi.icu/1/1769307009465-4e04d585-3f68-4fcb-a3b0-ba43ad70139a-20260127164823520-20260128201603535.png)
+
+This is basically like opening a skill store inside your AI assistant. After that, you can start installing skills from the store.
+
+![](https://pic.yupi.icu/1/1769307026089-70a117da-b18e-4c7d-992b-1d08e30a7a0b-20260127164823553-20260128201603572.png)
+
+Then run this command in Claude Code to install the official skill pack:
+
+```plain
+/plugin install example-skills@anthropic-agent-skills
+```
+
+![](https://pic.yupi.icu/1/1769307063576-10e2ce68-b5cd-41c7-8d6c-da0781298929-20260127164823605-20260128201603607.png)
+
+This `example-skills` package contains a bunch of official demo skills, including frontend design, webpage testing, animated image creation, and more.
+
+![](https://pic.yupi.icu/1/1769307079120-6aaf2999-fee5-4fdb-a5e3-2ba66824b4de-20260127164823637-20260128201603651.png)
+
+Once it’s installed, you can directly ask AI to use those skills.
+
+For example, if you type: help me build a personal portfolio website.
+
+The AI will proactively ask: I noticed you installed the frontend design skill. Would you like me to use it to generate a more design-oriented page?
+
+![](https://pic.yupi.icu/1/1769307135496-aa2a1e4e-4e8a-43e5-a138-9a148410b52e-20260127164911476-20260128201603748.png)
+
+After you confirm, the AI will use the skill to generate the code, say goodbye to blue-purple gradients, and create a beautiful page with a unique style.
+
+![](https://pic.yupi.icu/1/1769307161745-c81ca221-9902-49dd-96de-a99d50a17684-20260127164929260-20260128201603790.png)
+
+No need to type the same huge pile of prompts to the AI every time. Install the skill once and you’re done.
+
+
+
+#### UI UX Pro Max
+
+[UI UX Pro MAX](https://ui-ux-pro-max-skill.nextlevelbuilder.io/) is the anti-AI-flavor skill I currently find the most practical. It’s specifically built to improve AI’s design ability.
+
+![](https://pic.yupi.icu/1/1769601961428-9c2501f0-1d85-4911-932f-714396b5e06a.png)
+
+It supports almost all mainstream AI coding tools right now, including Claude Code, Cursor, VS Code, Codex, and more.
+
+Using it is also very simple. First, follow the instructions in the [open-source repository docs](https://github.com/nextlevelbuilder/ui-ux-pro-max-skill) to install the official CLI tool:
+
+```bash
+npm install -g uipro-cli
+```
+
+![](https://pic.yupi.icu/1/1769307627168-c682f14b-4517-4325-ad4a-33e88661e714-20260127165342236-20260128201604037.png)
+
+Then go into your project directory and run the corresponding command based on the AI tool you use. For example, here I’m using Cursor:
+
+```bash
+uipro init --ai cursor
+```
+
+![](https://pic.yupi.icu/1/1769307641070-2138ef02-8f26-460a-8cdd-979c59b725de-20260127165352453-20260128201604091.png)
+
+It will automatically install the skill into Cursor’s config directory.
+
+Next, when you ask the AI to build a website, you can either trigger the skill manually with a slash command or let the AI recognize the skill automatically.
+
+![](https://pic.yupi.icu/1/1769307707968-1545cef4-b8e2-4bf9-b0a7-98130afc78ba-20260127165405230-20260128201604126.png)
+
+1) The AI first identifies the product type and the kinds of pages needed based on your requirements
+
+![](https://pic.yupi.icu/1/1769307720984-a6afcae8-a5e8-4577-be7c-8356b42832ee-20260127165431384-20260128201604166.png)
+
+2) Then it calls the `search.py` search script to run multi-dimensional searches in the data directory and find suitable color schemes, fonts, and layout styles
+
+![](https://pic.yupi.icu/1/1769307768048-ef58645a-6188-4af7-9865-8033602126f7-20260127165431494-20260128201604217.png)
+
+3) Based on the search results, it generates a complete design plan, including the main color palette, font combinations, spacing rules, and so on
+
+![](https://pic.yupi.icu/1/1769307782038-59ea2231-b43d-45e3-a39f-6c36b0c7f645-20260127165431536-20260128201604239.png)
+
+4) Finally, it generates the code according to that design plan
+
+![](https://pic.yupi.icu/1/1769307794443-ffc76a7e-24e9-4e4d-b973-ef97285fd32b-20260127165431613-20260128201604303.png)
+
+That way, the generated interface looks both professional and design-driven.
+
+![](https://pic.yupi.icu/1/1769307819333-fef63881-90b7-4248-8ca7-35354f8a7a7a-20260127165431745-20260128201604458.png)
+
+AI doesn’t have to memorize every rule. It can look up what it needs when it needs it — that’s the essence of Agent Skills.
+
+
+
+### Method 6: Anti-AI-Flavor Component Libraries
+
+As mentioned earlier, to play it safe, AI will usually default to the most mainstream component libraries, such as Tailwind CSS and Shadcn UI.
+
+These libraries are professional, but they’re also the most likely to produce that AI flavor.
+
+So we can do the opposite and explicitly tell AI to use some **niche but distinctive** component libraries.
+
+For example, [Aceternity UI](https://ui.aceternity.com/) specializes in flashy effects — sparkles, aurora backgrounds, meteors, and other visually heavy components.
+
+![](https://pic.yupi.icu/1/1769601991258-c39a8b17-c707-4fb5-ab92-73abe8eb6d35.png)
+
+AI would struggle to write effects like this from scratch, but if you directly tell it to use this library, it can do it with just a few lines of code.
+
+One thing to note: for these relatively niche component libraries, AI may not be very familiar with the latest usage. I recommend installing the Context7 plugin so it can look up the latest docs in real time.
+
+![](https://pic.yupi.icu/1/1769602022954-c4712a60-e6e3-4818-b599-ca83fa41fdd3.png)
+
+Or just send the official docs URL directly to the AI for reference:
+
+```plain
+You must use Aceternity UI to design the website
+You need to read the official docs to understand the latest usage: https://ui.aceternity.com/components
+```
+
+The site’s style level instantly goes way up. It no longer looks AI-generated at all.
+
+![](https://pic.yupi.icu/1/1769602042077-97940429-7324-4ba9-938a-5897095115c8.png)
+
+There are lots of other UI component libraries I think have strong character:
+
+- [Magic UI](https://magicui.design/): 150+ animated components for micro-interactions, glowing borders, text gradients
+- [DaisyUI](https://daisyui.com/): 30+ themes, including cyberpunk, retro, cupcake, and more
+- [Brutalist UI](https://brutalistui.site/): brutalist style, thick borders, hard shadows, high contrast
+- [Glass UI](https://ui.glass/): glassmorphism effects, translucent layers, blurred backgrounds
+- [ikun-ui](https://github.com/ikun-svelte/ikun-ui): a component library based on Svelte.js and UnoCSS
+- [Radix UI](https://www.radix-ui.com/): unstyled primitive components for full customization
+- [Mantine](https://mantine.dev/): 100+ rich-featured components
+
+After two and a half years of practice, my personal favorite is still [ikun-ui](https://github.com/ikun-svelte/ikun-ui)~
+
+![](https://pic.yupi.icu/1/1769602061209-92ee57f0-76aa-412e-a4bb-c700094688b2.png)
+
+
+
+### Method 7: Custom Color Schemes (Advanced Tip)
+
+If you want your website to be even more unique and fully go your own way, then you’ll need to manually design the color scheme.
+
+This method is suitable for friends with some design background. You can use a few tools that quickly generate personalized palettes, such as:
+
+- [Coolors](https://coolors.co/): a mainstream color palette generator; press the space bar for random palettes and export in multiple formats
+- [Adobe Color](https://color.adobe.com/): Adobe’s official professional color tool
+
+![](https://pic.yupi.icu/1/1769602205633-22850346-ee55-4ab3-916d-c54e0f66fae2.png)
+
+Once you generate a palette, give the color values to the AI and tell it to strictly follow your scheme. The resulting website colors will definitely be unique.
+
+
+
+## Practical Cases
+
+The methods I introduced above can be combined. Below are a few real examples so you can feel the difference.
+
+### Case 1: Personal Tech Blog
+
+#### Before Optimization
+
+Just enter this prompt:
+
+```markdown
+Build a homepage for a personal tech blog
+```
+
+The result looks like this. One glance and you know it’s AI...
+
+![](https://pic.yupi.icu/1/1769602233437-c2df5654-4dc2-407d-86f8-c95888c446fd.png)
+
+
+
+#### After Optimization
+
+Use the `AGENTS.md` prompt rules + the UI UX Pro Max skill:
+
+```markdown
+Build a homepage for a personal tech blog
+```
+
+The resulting site feels geekier and the content is much richer.
+
+![](https://pic.yupi.icu/1/1769602249372-66ac1c3f-7aaa-4890-be04-5a3615226d49.png)
+
+![](https://pic.yupi.icu/1/1769602300430-f710cad3-dedb-4035-869c-42ef76467e95.png)
+
+
+
+### Case 2: SaaS Product Landing Page
+
+#### Before Optimization
+
+Just enter this prompt:
+
+```markdown
+Build a landing page for the SaaS product "Server Operations Monitoring Platform"
+```
+
+The result looks like this — blue-purple colors again, instantly screams AI...
+
+![](https://pic.yupi.icu/1/1769602314736-88e9b6e7-a14a-4ea3-99f4-5a2626c0d880.png)
+
+
+
+#### After Optimization
+
+Use the `AGENTS.md` prompt rules + the UI UX Pro Max skill + context injection + an anti-AI-flavor component library:
+
+```markdown
+Build a landing page for the SaaS product "Server Operations Monitoring Platform"
+
+Read this sentence first to feel the atmosphere: In The Matrix, would you choose the blue pill or the red pill?
+You must use Aceternity UI to design the website
+You need to read the official docs to understand the latest usage: https://ui.aceternity.com/components
+```
+
+The background turns into code rain, and the page looks much more like a professional product landing page:
+
+![](https://pic.yupi.icu/1/1769602346623-9d0988bb-5904-4328-9e87-9698bd9476f0.png)
+
+![](https://pic.yupi.icu/1/1769602360859-110bfa1e-e0e5-4276-8074-883f7c7ddae9.png)
+
+
+
+### Case 3: Fitness App Landing Page (Mobile)
+
+#### Before Optimization
+
+Just enter this prompt:
+
+```markdown
+Build a fitness app landing page (mobile)
+```
+
+The result... well, what even is this? No comment...
+
+![](https://pic.yupi.icu/1/1769602385367-1a74cdeb-7452-471d-b13b-3afdddb6fb81.png)
+
+
+
+#### After Optimization
+
+Use the `AGENTS.md` prompt rules + the UI UX Pro Max skill + an anti-AI-flavor component library:
+
+```markdown
+Build a fitness app landing page (mobile)
+
+You must use IKun UI to design the website
+You need to read the official docs to understand the latest usage: https://ikun-ui.netlify.app
+```
+
+
+
+This time the page looks much more real and usable. The contrast is pretty obvious, right?
+
+![](https://pic.yupi.icu/1/1769602473561-48f4ba99-d41a-462d-a7d3-6ea8613c43ba.png)
+
+
+
+## Final Words
+
+By this point, you should realize that AI is already extremely capable at building websites.
+
+Some friends think the results AI generates aren’t ideal, but often that’s simply because they didn’t give it clear enough instructions.
+
+It’s like a chef: if you just say “make something tasty,” to be safe they’ll cook the most generic home-style dish. But if you say “add more chili, skip the Sichuan peppercorns, add more doubanjiang,” they can make the exact flavor you want.
+
+**Remember, AI is the tool. You are the one in charge.**
+
+If you learned something — or unlearned something — give this a like~
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Path, Programming Tutorials, Practical Projects, Job Hunting Guide, Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Eight-Part Essay: [Internship/Campus Recruitment/Social Recruitment High-Frequency Test Points, Enterprise Real Questions Analysis](https://www.mianshiya.com)
+
+4) Programmer Resume Writing Tool: [Professional Templates, Rich Examples, Direct to Interview](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interview: [Internship/Campus Recruitment/Social Recruitment Interview Essential for Getting Offers](https://ai.mianshiya.com)

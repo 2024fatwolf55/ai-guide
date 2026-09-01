@@ -411,4 +411,114 @@ Add to Cart (POST /api/cart):
 - Receive product_id, quantity
 - If the product is already in the cart, accumulate the quantity
 - If it's a new product, create a new record
-- Check
+- Check whether inventory is sufficient
+
+Get Cart (GET /api/cart):
+- Return the list of items in the cart
+- Include product details (name, price, images, etc.)
+- Calculate the total price
+
+Update Quantity (PUT /api/cart/:id):
+- Update the quantity of the specified product
+- Check inventory
+
+Delete Item (DELETE /api/cart/:id):
+- Delete the specified item from the cart
+```
+
+The shopping cart feature needs to properly handle quantity accumulation, and it also needs to check inventory so users can't add more items than are in stock.
+
+The second key point is the order feature:
+
+```
+实现订单功能：
+
+创建订单（POST /api/orders）：
+- 接收 address_id 和购物车商品 ID 列表
+- 检查库存是否充足
+- 计算总价
+- 生成订单号（时间戳 + 随机数）
+- 创建订单和订单商品记录
+- 扣减库存
+- 清空购物车中已下单的商品
+- 使用数据库事务确保数据一致性
+
+获取订单列表（GET /api/orders）：
+- 返回用户的订单列表
+- 支持按状态筛选
+- 包含订单商品详情
+
+获取订单详情（GET /api/orders/:id）：
+- 返回订单详情
+- 包含收货地址、订单商品列表
+
+取消订单（PUT /api/orders/:id/cancel）：
+- 只能取消待支付的订单
+- 恢复库存
+- 更新订单状态为已取消
+```
+
+This prompt covers all order-related operations. Creating an order is the most complex part because it involves operations across multiple tables, so you need database transactions to ensure data consistency.
+
+The third key point is address management:
+
+```
+实现地址管理功能：
+
+添加地址（POST /api/addresses）：
+- 接收收货人信息
+- 如果设置为默认地址，将其他地址的 is_default 设为 false
+
+获取地址列表（GET /api/addresses）：
+- 返回用户的地址列表
+- 默认地址排在前面
+
+更新地址（PUT /api/addresses/:id）：
+- 更新指定地址
+
+删除地址（DELETE /api/addresses/:id）：
+- 删除指定地址
+- 如果删除的是默认地址，将第一个地址设为默认
+```
+
+
+
+### Development Tips
+
+When developing an e-commerce system, there are several key points that deserve extra attention. First is inventory management. When creating an order, you need to check stock, and inventory deduction should be done inside a database transaction to make sure overselling doesn't happen. You can ask AI to help you implement optimistic locking or pessimistic locking to handle concurrency issues.
+
+Second is order number generation. Order numbers must be unique. You can use a timestamp plus a random number, or use a Snowflake algorithm. You can ask AI to help you implement an order number generation function.
+
+Also, the relationship between the shopping cart and orders needs to be handled carefully. When creating an order, product information from the cart should be copied into the order items table instead of directly referencing the cart. Because product prices may change over time, the order needs to preserve the price at the time the order was placed. Only this way can you ensure the order amount doesn't change when product prices later change.
+
+Finally, make sure to do proper data validation. For example, quantity cannot be negative, price cannot be negative, and stock cannot be negative. You can ask AI to add complete parameter validation on the back end to prevent dirty data from entering the database.
+
+
+
+### Extension Ideas
+
+After completing the basic version, you can continue extending the functionality. For example, add product search and filtering by price, category, sales volume, and more; add product reviews so users can review purchased items; implement a coupon system supporting threshold discounts and percentage discounts; integrate payment features such as Alipay or WeChat Pay; add order logistics tracking so users can check shipping information; build a merchant admin dashboard to manage products and orders; or implement a recommendation algorithm to recommend products based on user preferences.
+
+
+
+## Final Thoughts
+
+Through these 3 full-stack projects, you've already learned the complete Web application development process: from a simple blog system, to a more complex Q&A community, and then to an online store involving transaction workflows. Each project helps you master different business scenarios and technical points.
+
+Full-stack development may look complicated, but with the Vibe Coding approach, you'll find it's not nearly as difficult as it seems. The key is to understand the business logic, know what functionality needs to be implemented, and then let the AI help you generate the code. If you want to learn more full-stack development techniques and best practices, you can refer to the **Tips & Tricks** section of this tutorial.
+
+After mastering full-stack application development, in the next article I'll take you into WeChat Mini Program development, so your applications can run inside WeChat and reach even more users.
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Paths, Programming Tutorials, Hands-on Projects, Job-Hunting Guide, Community Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Real Company Interview Analysis](https://www.mianshiya.com)
+
+4) Resume Tool for Programmers: [Professional Templates, Rich Example Sentences, Direct Access to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [Essential for Landing Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

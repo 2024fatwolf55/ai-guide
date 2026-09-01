@@ -403,4 +403,266 @@ The first step in development is to understand image generation APIs. The main p
 - prompt: Image description (most important)
 - size: Image size (e.g., 1024x1024)
 - quality: Quality (standard or high)
-- style: Style
+- style: Style (photorealistic or artistic)
+
+Different parameter combinations will generate images with different effects.
+
+2) Write a Requirements Document
+
+Then write a requirements document `PRD.md`:
+
+```markdown
+# AI 图片生成器 PRD
+
+## 核心功能
+1. 用户输入图片描述，点击生成
+2. 可以选择图片尺寸和风格
+3. 生成过程显示加载动画（通常需要 10-30 秒）
+4. 生成后显示图片，可以下载
+5. 有"优化提示词"按钮，AI 帮用户优化描述
+6. 保存生成历史
+
+## 界面要求
+- 顶部：大标题
+- 输入区：大文本框（多行）
+- 参数区：尺寸选择、风格选择
+- 按钮区：优化提示词、生成图片
+- 展示区：显示生成的图片 + 下载按钮
+- 侧边栏：历史记录
+```
+
+3) Develop Through AI Conversation
+
+Once the document is ready, you can start developing by talking with the AI.
+
+First, create the basic interface:
+
+```
+请根据 PRD.md 创建 AI 图片生成器的界面：
+1. 输入框：用户输入图片描述
+2. 参数选择：尺寸（3 个选项）、风格（2 个选项）
+3. 两个按钮：优化提示词、生成图片
+4. 图片展示区
+使用 Tailwind CSS，界面要美观。
+```
+
+Second, implement image generation:
+
+```
+实现图片生成功能：
+1. 调用智谱 AI 图片生成 API
+2. 发送 prompt、size、style 参数
+3. 生成过程显示加载动画和提示文字
+4. 生成成功后显示图片
+5. 错误时显示友好提示
+```
+
+Image generation usually takes 10 to 30 seconds, so loading feedback is very important. Users need to know the app is generating, not frozen.
+
+Third, implement prompt optimization:
+
+```
+实现提示词优化功能：
+当用户点击"优化提示词"按钮时：
+1. 把用户输入的简单描述发送给 AI
+2. 让 AI 扩展成详细的图片生成提示词
+3. 提示词要包含：主体、风格、光线、色彩、构图等细节
+4. 把优化后的提示词填回输入框
+```
+
+This feature is extremely practical, because it helps users who don't know how to write prompts generate better images.
+
+Fourth, add history logging:
+
+```
+实现历史记录功能：
+1. 每次生成成功后，保存到 LocalStorage
+2. 保存内容：提示词、图片 URL、生成时间
+3. 左侧显示历史记录列表（缩略图 + 提示词）
+4. 点击历史记录可以查看大图
+5. 支持删除历史记录
+```
+
+Fifth, add download support:
+
+```
+实现图片下载功能：
+点击下载按钮时，下载当前显示的图片。
+文件名格式：ai-image-[时间戳].png
+```
+
+
+
+### Prompt Tips for Image Generation
+
+The quality of generated images depends heavily on the prompt. A good prompt usually includes these elements: the subject (what to draw), the action or state (what it is doing), the environment/background (where it is), the style, the lighting, the color palette, and quality descriptors (such as HD / 4K).
+
+For example, if you want to generate an image of a cat, you can describe it like this:
+
+```markdown
+一只可爱的橘猫，坐在窗台上看着外面的雨，温暖的室内光线，柔和的色调，细腻的毛发质感，景深效果，高清画质，4K。
+```
+
+This kind of description includes all the key elements, so the generated image quality will usually be better.
+
+For style, you can use keywords to specify it. For photorealistic styles, use words like `photorealistic`, `realistic`, `detailed`; for cartoon styles, use `cartoon style`, `anime style`, `cute`; for oil painting styles, use `oil painting`, `artistic`, `impressionist`; for watercolor styles, use `watercolor`, `soft colors`; and for cyberpunk styles, use `cyberpunk`, `neon lights`, `futuristic`.
+
+Quality descriptors are also important, such as `high quality`, `detailed`, `4K`, `8K`, `professional`, and `masterpiece`. These words can help the AI generate more refined images.
+
+If you're not sure how to write prompts, you can let AI help you. For example, if you want to generate an image of a programmer coding in a café, you can tell the AI:
+
+```
+我想生成一张图片，内容是：一个程序员在咖啡厅写代码。请帮我把这个描述扩展成详细的图片生成提示词。
+```
+
+The AI will give you a detailed description covering the scene, lighting, color palette, composition, and more. For example:
+
+```markdown
+一位年轻的程序员坐在温馨的咖啡厅靠窗位置，专注地在笔记本电脑上写代码，桌上放着一杯热气腾腾的拿铁咖啡，温暖的下午阳光透过窗户洒在桌面上，背景是模糊的咖啡厅环境，柔和的光线，温暖的色调，电影感构图，景深效果，高清画质，专业摄影。
+```
+
+💡 If you're using an overseas AI image model, English prompts may work even better.
+
+
+
+### Cost Control Suggestions
+
+One thing to keep in mind is that image generation is much more expensive than text generation, so you need to control costs carefully. During development and testing, standard quality is enough—you don't need HD quality. Optimize the prompt before generating to avoid repeated trial and error wasting your quota. If your budget is limited, you can also consider cheaper alternatives.
+
+
+
+### Extension Ideas
+
+After finishing the basic version, you can continue expanding the app. For example, add image editing based on existing images; support batch generation to generate multiple images at once; add style presets so users can pick common styles with one click; implement image zooming to inspect details; or even add community sharing so users can share the images they've generated.
+
+
+
+## 5. Project Practice - Speech Recognition App
+
+Finally, let's build an AI application involving audio processing. Speech recognition can give your application voice input support and greatly improve the user experience. This project will help you learn how to process audio data and call speech recognition APIs.
+
+This project needs to implement voice recording and recognition. The user clicks a button to start recording, clicks again to stop, and then converts the speech into text. It should support multiple languages, allow the recognition result to be edited, and save the results to a history log.
+
+![](https://pic.yupi.icu/1/demoweb9.png)
+
+The recording feature uses the browser's built-in MediaRecorder API, so no extra library is required. Speech recognition calls Zhipu AI's speech recognition capability—[visit the official site to get an API Key](https://bigmodel.cn/). The rest of the tech stack is similar to the earlier projects.
+
+
+
+### Development Steps
+
+1) Understand the Speech Recognition API
+
+The first step in development is to understand the speech recognition API. Calling a speech recognition API is very straightforward: upload an audio file, specify the language (optional), and get back the recognized text.
+
+2) Write a Requirements Document
+
+Then write a requirements document `PRD.md`:
+
+```markdown
+# 语音识别应用 PRD
+
+## 核心功能
+1. 大大的录音按钮，点击开始录音，再点击停止
+2. 录音时按钮变红色，有动画效果
+3. 停止后显示"开始识别"按钮
+4. 识别过程显示加载提示
+5. 识别结果显示在下方，可以编辑
+6. 保存识别历史
+
+## 界面要求
+- 简洁的单页面
+- 中央大圆形录音按钮
+- 识别结果区域
+- 底部历史记录列表
+```
+
+3) Develop Through AI Conversation
+
+Once the document is ready, you can start developing by talking with the AI.
+
+First, implement recording:
+
+```
+请实现浏览器录音功能：
+1. 使用 MediaRecorder API 录制音频
+2. 需要请求麦克风权限
+3. 点击按钮开始录音，再点击停止
+4. 录音时按钮变红色，有脉冲动画
+5. 停止后保存音频数据（Blob 格式）
+```
+
+This prompt explains what technology to use and what functionality to build. MediaRecorder API is a browser-provided recording interface, so no additional library installation is needed, which makes it very convenient.
+
+Second, implement speech recognition:
+
+```
+实现语音识别功能：
+1. 调用智谱 AI 语音识别 API
+2. 上传录音的音频文件
+3. 指定语言为中文
+4. 显示识别结果
+5. 错误时显示友好提示
+```
+
+Third, optimize the interface and experience:
+
+```
+优化界面和用户体验：
+1. 录音按钮要大且醒目（直径 120px）
+2. 识别结果区域要支持编辑
+3. 添加复制按钮，方便复制识别结果
+4. 识别过程显示加载动画和提示文字
+5. 整体使用简洁现代的设计
+```
+
+Fourth, add history logging:
+
+```
+实现历史记录功能：
+1. 每次识别成功后保存到 LocalStorage
+2. 保存内容：识别文本、时间戳
+3. 底部显示历史记录列表
+4. 点击历史记录可以查看详情
+5. 支持删除历史记录
+```
+
+
+
+### Development Tips
+
+During development, there are several tips worth noting. First is microphone permission handling. The first time a user uses the feature, the browser will ask whether to allow microphone access. If the user denies it, show a friendly message such as: "Microphone permission is required for recording. Please allow microphone access in your browser settings," and provide a button to request permission again.
+
+Second is audio format handling. The format recorded by MediaRecorder may be `webm`, and most speech recognition APIs support this format. If not, you can ask AI to help you convert the format.
+
+Third is limiting recording duration. To avoid files becoming too large and recognition taking too long, you can limit recording length—for example, to a maximum of 60 seconds. Show a countdown during recording and stop automatically when the time is reached. You can also display the recording duration in real time so users know how long they have been recording.
+
+
+
+### Extension Ideas
+
+After completing the basic version, you can continue expanding its functionality. For example, add voice translation so recognized speech is automatically translated into other languages; support real-time recognition so speech is transcribed while the user is speaking; add keyword extraction to automatically extract important information; support multi-speaker conversation recognition and distinguish between different speakers; add subtitle generation to create subtitles for videos; or even integrate the feature into other apps, such as a chat assistant that supports voice input.
+
+
+
+## Final Thoughts
+
+Through these 4 AI application projects, you've already learned the basic workflow of AI application development: from a simple chat assistant, to a professional writing assistant, to a cool image generator, and finally to a practical speech recognition app. Each project helps you master a different AI capability.
+
+The barrier to AI application development is already very low. You don't need to understand complicated machine learning algorithms—as long as you know how to call APIs and design good prompts, you can build really cool applications. If you want to learn more AI application development techniques and best practices, you can refer to the **Tips & Tricks** section of this tutorial.
+
+After mastering AI application development, in the next article I'll take you on to more complex full-stack application development, where you'll learn how to handle the front end, back end, and database together. Let's keep moving forward!
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Paths, Programming Tutorials, Hands-on Projects, Job-Hunting Guide, Community Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Real Company Interview Analysis](https://www.mianshiya.com)
+
+4) Resume Tool for Programmers: [Professional Templates, Rich Example Sentences, Direct Access to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [Essential for Landing Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

@@ -400,4 +400,23 @@ By now, you should fully understand TRAE SOLO.
 
 ![](https://pic.yupi.icu/1/image-20250928220158367.png)
 
-It feels like development tools are just toys for the AI—it freely operates
+It feels like development tools are just toys for the AI—it can freely operate editors, terminals, browsers, documents, integrated services, and more to complete tasks autonomously. It really is more efficient and intelligent than before, and it can even complete full projects that include backends.
+
+But during development, everyone should keep in mind that **AI currently loves to make simple things unnecessarily complicated**, so it's best for humans to carefully review the requirements document and solution document, and build the project step by step like stacking blocks.
+
+Go try using TRAE SOLO to build a small project and experience what AI-led development feels like~ 🛫
+
+
+
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Directory, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Paths, Programming Tutorials, Hands-on Projects, Job-Hunting Guide, Community Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Real Company Interview Analysis](https://www.mianshiya.com)
+
+4) Resume Tool for Programmers: [Professional Templates, Rich Example Sentences, Direct Access to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [Essential for Landing Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

@@ -415,3 +415,119 @@ Week 1:
 Weeks 2-3:
 - Learn AI code editors (e.g., Cursor)
 - Complete 3-5 simple projects
+
+Months 1-2:
+- Selectively learn more tools
+- Build some medium-difficulty projects
+- Learn advanced techniques
+
+After that:
+- Keep building projects and accumulating experience
+- Learn new knowledge as needed
+- Stay updated on the latest tools and technologies
+
+---
+
+### For Those with a Programming Background
+
+If you’ve studied programming before or you’re already a developer, here’s how I suggest you learn:
+
+Days 1-2:
+- Quickly go through the basic content
+- Understand the Vibe Coding mindset
+- Complete the quick-start tutorial
+
+Week 1:
+- Learn the mainstream AI programming tools
+- Try using Vibe Coding to refactor your previous projects
+- Feel the efficiency boost
+
+After that:
+- Focus on advanced techniques
+- Improve your conversation and context management skills
+- Explore workflow optimization
+
+---
+
+### The Structure of This Tutorial
+
+To make it easier for you to learn, I’ve divided the whole tutorial into several sections:
+
+1. **[Must-Read Basics]** Introduction to Vibe Coding + Quick Start (required)
+2. **[Must-Read Basics]** AI Programming Learning Roadmap (recommended, to understand the full learning path)
+3. **[Advanced Optional]** Programming Tools: Helps you choose the AI programming tools that suit you, covering all major categories including AI model selection, AI no-code platforms, AI agent platforms, AI code editors, AI command-line tools, IDE plugins, and more. The three mainstream tools—Cursor, Codex, and Claude Code—each have their own dedicated tutorial collections.
+4. **[Advanced Optional]** Model Updates: Whenever a major model is released, I’ll test it and compare it as soon as possible, so you can quickly judge whether it’s worth switching.
+5. **[Advanced Optional]** Project Practice: Multiple original project tutorial series, categorized into AI creative apps, AI practical tools, AI agents and platforms, and cross-platform AI applications, teaching you step by step how to build real, usable products from 0 to 1.
+6. **[Advanced Optional]** Experience & Techniques: Improve the efficiency and quality of AI programming, including core principles, conversation engineering, context management, hallucination handling, code quality assurance, code refactoring, performance optimization, security protection, cost control, team collaboration, and even in-depth tutorials on cutting-edge methodologies like Harness Engineering and Loop Engineering.
+7. **[Advanced Optional]** Programming Learning: Advanced content for students who want to dive deeper into programming, including complete learning roadmaps, knowledge encyclopedias, AI application development, interview prep for large-model roles, and more.
+8. **[Advanced Optional]** Product Monetization: Teaches you how to make your products valuable, covering requirement analysis, tech stack selection, architecture design, business models, SEO (Search Engine Optimization), GEO (Generative Engine Optimization), system monitoring and alerts, self-media operations, and more.
+9. **[Advanced Optional]** Resource Library: A collection of practical resources, including comprehensive tool lists, prompt templates, a glossary of AI programming concepts, common troubleshooting manuals, and more.
+
+You can learn selectively based on your own pace and needs.
+
+If you prefer video tutorials, check out Yupi’s hands-on AI programming video course: [《AI Programming Practice for Absolute Beginners》](https://www.bilibili.com/cheese/play/ss475098271). It covers practical use of mainstream tools like Cursor, Codex, and Claude Code, with step-by-step demonstrations throughout. When you buy the course, you can also join an exclusive student group and ask me directly whenever you run into problems.
+
+---
+
+### Learning Suggestions
+
+Finally, let me give you a few learning tips.
+
+Suggestion 1: Build first, study later
+- Don’t try to finish all the theory before getting your hands dirty
+- After reading the quick-start tutorial, immediately build a project
+- When you run into problems in practice, come back and learn
+
+Suggestion 2: Build more projects
+- Projects are the best teacher
+- Start with simple projects and gradually increase the difficulty
+- Every project should be usable and presentable
+
+Suggestion 3: Be willing to make mistakes
+- Don’t be afraid of doing it wrong—AI can help you fix it
+- Boldly try new ideas
+- Failure is experience too
+
+Suggestion 4: Record your experience
+- Write down every problem you encounter and how you solved it
+- Accumulate your own prompt templates
+- Build a personal knowledge base
+
+Suggestion 5: Stay curious
+- AI tools update quickly, so keep paying attention
+- Look at other people’s work more often
+- Communicate and share more
+
+---
+
+## Final Thoughts
+
+If you’ve made it this far, I believe you now have a basic understanding of Vibe Coding.
+
+Let me emphasize one more time: **Vibe Coding is not a technology—it’s a completely new programming mindset. It turns programming from “writing code” into “expressing requirements,” and from “memorizing syntax” into “speaking plain language.”**
+
+In this era, creativity matters more than technology, ideas matter more than implementation, and iteration matters more than perfection.
+
+Anyone who can express needs, has creativity, and is willing to learn can use Vibe Coding to turn ideas into products.
+
+I’ve personally built many projects with Vibe Coding, and it has increased my productivity by at least 10x. Through this tutorial, I hope I can help open the door to a whole new world for you as well.
+
+If you want to learn systematically through video, I also recorded a course called [《AI Programming Practice for Absolute Beginners》](https://www.bilibili.com/cheese/play/ss475098271). It walks you through everything from environment setup to building multiple complete projects to advanced improvement, with step-by-step demonstrations the whole way, so even complete beginners can follow along and create their own work. Buying the course also lets you join an exclusive student group, where you can ask me questions directly whenever you run into trouble—it’s much faster than struggling alone. For details, you can read the section “Yupi’s AI Programming Practice Video Course” in this tutorial.
+
+In the next article, I’ll personally guide you through building and deploying your very first web app in just 10 minutes!
+
+Are you ready? Let’s begin this amazing journey together! 🛫
+
+---
+
+## Recommended Resources
+
+1) Yupi’s AI Navigation site: [A complete collection of AI resources, latest AI news, and free AI tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning roadmaps, programming tutorials, hands-on projects, job-hunting guides, and Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-frequency topics for internships / campus hiring / experienced hiring, plus real company question analysis](https://www.mianshiya.com)
+
+4) Resume-building tool for programmers: [Professional templates, rich example sentences, and direct paths to interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 mock interviews: [A must-have for winning offers in internships / campus hiring / experienced hiring](https://ai.mianshiya.com)

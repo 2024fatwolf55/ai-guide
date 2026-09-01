@@ -375,7 +375,7 @@ But guess what? After waiting nearly 10 minutes, the task still wasn't finished.
 
 Looking at this task list - does it really need to be this complex? It even pulled in databases?
 
-![](https://pic.yupi.icu/1/image-20260107200237753.png)
+![=](https://pic.yupi.icu/1/image-20260107200237753.png)
 
 I've lost patience waiting. Just end it!
 
@@ -389,4 +389,24 @@ The frontend is indeed excellent, but backend capabilities seem behind Claude Co
 
 If I just want frontend convenience, why not use Cursor?
 
-![](https://
+![](https://pic.yupi.icu/1/image-20260107200720088.png)
+
+But OpenCode’s success proves one thing: **whoever stays closest to users and discovers pain points first has the chance to surpass the giants.**
+
+Claude Code really is powerful, but its restrictions on Chinese users gave the open-source community a perfect opportunity. OpenCode seized that pain point and won users’ hearts in a more open way.
+
+Although the actual effect still needs improvement, OpenCode is at least completely open-source and free. For programmers who love tinkering, it offers much stronger customizability. You can even fork your own copy and hack it however you like.
+
+OK, that’s all for this one. Have you used OpenCode? Feel free to share your experience in the comments~
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Programming Navigation Learning Circle: [Learning Roadmaps, Programming Tutorials, Hands-on Projects, Job-Hunting Guides, and Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheets: [High-Frequency Topics for Internships / Campus Hiring / Experienced Hiring, Plus Real Company Question Analysis](https://www.mianshiya.com)
+
+4) Resume-Building Tool for Programmers: [Professional Templates, Rich Example Sentences, and Direct Paths to Interviews](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interviews: [A Must-Have for Winning Offers in Internships / Campus Hiring / Experienced Hiring](https://ai.mianshiya.com)

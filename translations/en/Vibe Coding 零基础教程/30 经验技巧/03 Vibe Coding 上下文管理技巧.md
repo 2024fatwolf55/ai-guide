@@ -579,4 +579,26 @@ Let me summarize the key points of this article:
 
 3. Build a documentation system: `README.md`, `TODO.md`, and context files are essential.
 
-4. Leverage tool features: Different tools have
+4. Leverage tool features: Different tools have different context mechanisms, and you should make good use of them.
+
+5. Repair breaks promptly: If you notice AI has "lost its memory," fix it immediately instead of continuing blindly.
+
+6. Keep it concise and up to date: Context should be refined, accurate, and updated in time.
+
+Once you master context engineering, you'll be able to keep AI in the right state all the time and greatly improve your development efficiency.
+
+In the next article, I'll explain how to debug AI hallucinations and teach you how to deal with situations where AI makes mistakes.
+
+Keep charging forward! 💪
+
+## Recommended Resources
+
+1) Yupi AI Navigation Website: [AI Resource Collection, Latest AI News, Free AI Tutorials](https://ai.codefather.cn)
+
+2) Code Navigation Learning Circle: [Learning Paths, Programming Tutorials, Practical Projects, Job Hunting Guides, Q&A](https://www.codefather.cn)
+
+3) Programmer Interview Cheat Sheet: [Internship/Campus Recruitment/Social Recruitment High-frequency Topics, Enterprise Question Analysis](https://www.mianshiya.com)
+
+4) Programmer Resume Builder: [Professional Templates, Rich Examples, Direct to Interview](https://www.laoyujianli.com)
+
+5) 1-on-1 Mock Interview: [Essential for Internship/Campus Recruitment/Social Recruitment Interviews to Get Offers](https://ai.mianshiya.com)
