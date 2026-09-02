@@ -13,7 +13,7 @@
   <a href="https://ai.codefather.cn"><img src="https://img.shields.io/badge/🌐 在线阅读-ai.codefather.cn-blue?style=for-the-badge" alt="在线阅读"/></a>
   <a href="https://github.com/liyupi/ai-guide"><img src="https://img.shields.io/github/stars/liyupi/ai-guide?style=for-the-badge&logo=github&color=yellow" alt="GitHub Stars"/></a>
   <a href="https://space.bilibili.com/12890453"><img src="https://img.shields.io/badge/B站-程序员鱼皮-pink?style=for-the-badge&logo=bilibili" alt="B站"/></a>
-  <a href="https://www.bilibili.com/cheese/play/ss475098271"><img src="https://img.shields.io/badge/🎬 视频教程-AI编程实战-orange?style=for-the-badge" alt="视频教程"/></a>
+  <a href="https://ai.codefather.cn/course/2087008226460565505"><img src="https://img.shields.io/badge/🎬 视频教程-AI编程实战-orange?style=for-the-badge" alt="视频教程"/></a>
 </p>
 
 
@@ -65,7 +65,7 @@
 
 如果你更喜欢看视频学习，我还录制了一套《小白都能学的 AI 编程实战》视频课程，哪怕没有任何基础，也能跟着从 0 跑通完整的项目流程，开发出能上线、能商用变现的作品。
 
-> 课程地址：https://www.bilibili.com/cheese/play/ss475098271
+> 课程地址：https://ai.codefather.cn/course/2087008226460565505
 
 ![](https://pic.yupi.icu/1/image-20260528190958881.png)
 
@@ -153,7 +153,7 @@ ai-guide/
 │   ├── 10 编程工具/               # Cursor、Codex、Claude Code 等工具专题
 │   ├── 15 模型动态/               # AI 模型发布测评
 │   ├── 20 项目实战/               # 从 0 到 1 做出产品
-│   ├── 30 经验技巧/               # 效率提升、Harness、Loop 等
+│   ├── 30 经验技巧/               # 效率提升、Harness、Loop、大厂官方经验等
 │   ├── 40 编程学习/               # 进阶编程知识
 │   ├── 50 产品变现/               # 盈利模式、SEO、运营
 │   ├── 60 Vibe Coding 资源大全

@@ -305,7 +305,7 @@ If you want to understand more advanced RAG approaches, I previously wrote a pan
 
 ## Final Thoughts
 
-This article is a streamlined introduction to the AI coding tech stack. In Yupi’s video course [AI Coding in Practice for Complete Beginners](https://www.bilibili.com/cheese/play/ss475098271), I also included the full version of the *AI Coding Tech Stack Quick Reference Manual*, which covers many more technologies in detail so you can quickly look up and understand any unfamiliar tool.
+This article is a streamlined introduction to the AI coding tech stack. In Yupi’s video course [AI Coding in Practice for Complete Beginners](https://ai.codefather.cn/course/2087008226460565505), I also included the full version of the *AI Coding Tech Stack Quick Reference Manual*, which covers many more technologies in detail so you can quickly look up and understand any unfamiliar tool.
 
 I’ve helped you sort through the core technologies of the AI coding era, from programming languages to frontend and backend frameworks, from databases to deployment, and from calling AI large models to RAG knowledge bases.
 

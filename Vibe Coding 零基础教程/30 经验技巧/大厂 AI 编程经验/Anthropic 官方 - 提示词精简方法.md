@@ -1,4 +1,4 @@
-# Anthropic 官方的提示词精简方法
+# Anthropic 官方 - 提示词精简方法
 
 > 官方砍掉了 Claude Code 80% 的系统提示词，跑分居然没降
 

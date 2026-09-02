@@ -465,7 +465,7 @@ To make it easier for you to learn, I’ve divided the whole tutorial into sever
 
 You can learn selectively based on your own pace and needs.
 
-If you prefer video tutorials, check out Yupi’s hands-on AI programming video course: [《AI Programming Practice for Absolute Beginners》](https://www.bilibili.com/cheese/play/ss475098271). It covers practical use of mainstream tools like Cursor, Codex, and Claude Code, with step-by-step demonstrations throughout. When you buy the course, you can also join an exclusive student group and ask me directly whenever you run into problems.
+If you prefer video tutorials, check out Yupi’s hands-on AI programming video course: [《AI Programming Practice for Absolute Beginners》](https://ai.codefather.cn/course/2087008226460565505). It covers practical use of mainstream tools like Cursor, Codex, and Claude Code, with step-by-step demonstrations throughout. When you buy the course, you can also join an exclusive student group and ask me directly whenever you run into problems.
 
 ---
 
@@ -512,7 +512,7 @@ Anyone who can express needs, has creativity, and is willing to learn can use Vi
 
 I’ve personally built many projects with Vibe Coding, and it has increased my productivity by at least 10x. Through this tutorial, I hope I can help open the door to a whole new world for you as well.
 
-If you want to learn systematically through video, I also recorded a course called [《AI Programming Practice for Absolute Beginners》](https://www.bilibili.com/cheese/play/ss475098271). It walks you through everything from environment setup to building multiple complete projects to advanced improvement, with step-by-step demonstrations the whole way, so even complete beginners can follow along and create their own work. Buying the course also lets you join an exclusive student group, where you can ask me questions directly whenever you run into trouble—it’s much faster than struggling alone. For details, you can read the section “Yupi’s AI Programming Practice Video Course” in this tutorial.
+If you want to learn systematically through video, I also recorded a course called [《AI Programming Practice for Absolute Beginners》](https://ai.codefather.cn/course/2087008226460565505). It walks you through everything from environment setup to building multiple complete projects to advanced improvement, with step-by-step demonstrations the whole way, so even complete beginners can follow along and create their own work. Buying the course also lets you join an exclusive student group, where you can ask me questions directly whenever you run into trouble—it’s much faster than struggling alone. For details, you can read the section “Yupi’s AI Programming Practice Video Course” in this tutorial.
 
 In the next article, I’ll personally guide you through building and deploying your very first web app in just 10 minutes!
 

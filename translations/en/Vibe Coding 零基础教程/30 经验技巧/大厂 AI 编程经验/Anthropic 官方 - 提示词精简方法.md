@@ -1,4 +1,4 @@
-# Anthropic’s Official Method for Streamlining Prompts
+# Anthropic Official - Method for Streamlining Prompts
 
 > The official team cut 80% of Claude Code’s system prompts, and the benchmark score didn’t even drop
 

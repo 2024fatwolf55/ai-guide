@@ -465,7 +465,7 @@ This article summarizes dozens of common questions, covering concept understandi
 
 Of course, Vibe Coding is still evolving rapidly. New problems will keep appearing, and new solutions will keep emerging. I recommend that you keep learning, follow community updates, communicate with other developers, and keep improving without limits!
 
-If you want a more systematic way to troubleshoot bugs, Yupi’s [“AI Programming Practice for Beginners” video course](https://www.bilibili.com/cheese/play/ss475098271) comes with an **AI Programming Bug Quick Reference Manual**, covering quick fixes for all kinds of common errors. And after purchasing the course, you can join the exclusive student group, where you can ask me directly when you run into problems you can’t solve on your own instead of struggling alone.
+If you want a more systematic way to troubleshoot bugs, Yupi’s [“AI Programming Practice for Beginners” video course](https://ai.codefather.cn/course/2087008226460565505) comes with an **AI Programming Bug Quick Reference Manual**, covering quick fixes for all kinds of common errors. And after purchasing the course, you can join the exclusive student group, where you can ask me directly when you run into problems you can’t solve on your own instead of struggling alone.
 
 
 

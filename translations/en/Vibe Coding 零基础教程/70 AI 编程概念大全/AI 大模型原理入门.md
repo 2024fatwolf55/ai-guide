@@ -194,7 +194,7 @@ Besides that, AI has a few other issues.
 
 3) Every answer contains some randomness, so if you ask the same question twice, the answers may not be identical. That’s why you need to adjust the `temperature` parameter according to the task in order to control randomness.
 
-If you want to study the principles of AI large models more systematically, Yupi’s video course [AI Coding in Practice for Complete Beginners](https://www.bilibili.com/cheese/play/ss475098271) also includes the full *Introductory Manual to AI Large Model Principles*, with more detailed explanations and illustrations for each concept.
+If you want to study the principles of AI large models more systematically, Yupi’s video course [AI Coding in Practice for Complete Beginners](https://ai.codefather.cn/course/2087008226460565505) also includes the full *Introductory Manual to AI Large Model Principles*, with more detailed explanations and illustrations for each concept.
 
 
 

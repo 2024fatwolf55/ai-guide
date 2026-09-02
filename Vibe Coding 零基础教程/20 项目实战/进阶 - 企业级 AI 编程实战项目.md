@@ -171,6 +171,31 @@
 
 
 
+### AI 智能 PPT 生成器
+
+基于 Python FastAPI + LangChain + LangGraph + python-pptx + React 开发的 AI PPT 生成器，用户输入主题、长文本或上传文档，即可生成可修改的大纲并并发生成完整页面，最终导出原生可编辑的 PPTX 文件。这是一套以 AI 工程化 + 工作流 + 异步任务编排为核心的全栈项目，重点讲清楚每个关键决策背后的动机、替代方案和踩坑，带你把一个模型 Demo 做成能持续运行的工程项目。
+
+适合人群：想系统学习 AI 工程化、掌握 LangChain 和 LangGraph 主流框架、补齐 Python + React 全栈能力的同学，也可以直接作为毕设。
+
+[👉🏻 点击开始学习](https://www.codefather.cn/course/2091823677833220098)
+
+技术亮点：
+
+- LangChain 结构化输出保证模型输出可用
+- LangGraph 自纠环工作流提升生成质量
+- ARQ + Redis 异步任务编排和页级并发
+- Redis pub/sub + SSE 实时进度推送
+- python-pptx 原生可编辑 PPTX 渲染
+- 内容 / 布局 / 主题三分离数据模型
+- FontTools 字形级文字溢出检测
+- 布局树 + solver 灵活排版引擎
+
+
+
+![鱼皮 AI 智能 PPT 生成器项目](https://pic.yupi.icu/1/image-20260820140224805.png)
+
+
+
 ### 智能协同云图库
 
 基于 Vue 3 + Spring Boot + COS + WebSocket 的企业级智能协同云图库平台。涉及文件存管、内容检索、权限控制、实时协同等企业主流业务场景，技术栈包括 MySQL 分库分表、Redis + Caffeine 多级缓存、COS 对象存储、Sa-Token 权限控制、DDD 领域驱动设计、WebSocket 实时通讯、AI 绘图大模型等。

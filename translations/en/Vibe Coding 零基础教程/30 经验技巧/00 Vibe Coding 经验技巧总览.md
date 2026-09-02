@@ -108,7 +108,7 @@ Time-constrained learners:
 
 These ideas come from the real-world practice of many Vibe Coding experts, as well as my own experience. I hope they help you avoid detours and master Vibe Coding faster. Keep going!
 
-If you want a more complete summary of the methodology, Yupi's video course [*AI Programming Practice for Complete Beginners*](https://www.bilibili.com/cheese/play/ss475098271) comes with the companion handbook *AI Programming Tips and Tricks Collection*. It systematically explains practical methodologies such as the five core principles, the four-step requirement breakdown method, and the three-step bug troubleshooting method. And if you run into any problem in the exclusive student community, you can ask me directly.
+If you want a more complete summary of the methodology, Yupi's video course [*AI Programming Practice for Complete Beginners*](https://ai.codefather.cn/course/2087008226460565505) comes with the companion handbook *AI Programming Tips and Tricks Collection*. It systematically explains practical methodologies such as the five core principles, the four-step requirement breakdown method, and the three-step bug troubleshooting method. And if you run into any problem in the exclusive student community, you can ask me directly.
 
 ## Recommended Resources
 

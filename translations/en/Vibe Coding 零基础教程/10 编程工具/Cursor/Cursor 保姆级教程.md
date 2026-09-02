@@ -400,7 +400,7 @@ For now, you don’t need to study Git deeply. Just think of it as the “undo p
 
 
 
-If you want to systematically learn Cursor and multiple AI programming tools through video, and use AI to build several complete enterprise-grade projects from scratch, you can check out Yupi’s latest [AI Programming Practice for Complete Beginners](https://www.bilibili.com/cheese/play/ss475098271) video course. It contains a more complete beginner-friendly Cursor video tutorial plus multiple enterprise project practice courses.
+If you want to systematically learn Cursor and multiple AI programming tools through video, and use AI to build several complete enterprise-grade projects from scratch, you can check out Yupi’s latest [AI Programming Practice for Complete Beginners](https://ai.codefather.cn/course/2087008226460565505) video course. It contains a more complete beginner-friendly Cursor video tutorial plus multiple enterprise project practice courses.
 
 
 
